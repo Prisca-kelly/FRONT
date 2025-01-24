@@ -1,0 +1,45 @@
+/*******************************************************/
+/******************* ## Benefit Area *******************/
+/*******************************************************/
+.benefit-area-inner
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        background-size: cover
+        background-position: center
+        background-color: $heading-color
+        background-image: url(../images/shapes/benefit-bg-shape.png)
+        +absmiddle()
+        +size(1650px, 100%)
+        border-radius: 20px
+        
+.benefit-content-part
+    .happy-customer
+        +res-ab(xs)
+            display: flex
+            align-items: center
+        h6
+            font-size: 18px
+            font-weight: 400
+            flex: none
+            margin-right: 20px
+            margin-bottom: 0
+        .feature-authors
+            +res-bl(xs)
+                margin-top: 15px
+            > span
+                background: $primary-color
+                
+.benefit-image-part
+    display: flex
+    max-width: 740px
+    align-items: flex-start
+    +res-ab(xl)
+        margin-left: auto
+    .image-two
+        margin-top: 50px
+        margin-left: -80px
+    &.style-two
+        +res-ab(xl)
+            margin-left: -30px

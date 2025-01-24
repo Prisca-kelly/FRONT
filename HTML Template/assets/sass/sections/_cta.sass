@@ -1,0 +1,85 @@
+/*******************************************************/
+/******************** ## CTA Area ********************/
+/*******************************************************/
+.cta-item
+    z-index: 1
+    padding: 50px
+    display: flex
+    overflow: hidden
+    min-height: 400px
+    position: relative
+    border-radius: 15px
+    margin-bottom: 30px
+    align-items: flex-start
+    flex-direction: column
+    background-size: cover
+    height: calc(100% - 30px)
+    background-position: center
+    +res-bl(lg)
+        +gapLR(padding, 45px)
+    +res-bl(ms)
+        +gapLR(padding, 35px)
+    +res-bl(xs)
+        padding-right: 30px
+    &:before
+        +poLT(0)
+        content: ''
+        +size(100%)
+        z-index: -1
+        background: linear-gradient(360deg, rgba(29, 35, 31, 0.5) 0%, rgba(29, 35, 31, 0) 100%)
+    .category
+        color: white
+        display: block
+        margin-top: -5px
+        margin-bottom: 5px
+    h2
+        color: white
+        max-width: 400px
+        margin-bottom: 30px
+        +res-bl(xxl)
+            font-size: 38px
+        +res-bl(xs)
+            font-size: 33px
+    .theme-btn
+        margin-top: auto
+        
+/* CTA Two */
+.cta-area-two
+    border-radius: 10px
+    &:before
+        opacity: 0.75
+    
+.cta-content-part
+    max-width: 444px
+    .section-title
+        h2
+            letter-spacing: -2px
+            +res-ab(xxl)
+                font-size: 65px
+            span
+                line-height: 1
+                border-radius: 7px
+                background: $primary-color
+    p
+        max-width: 350px
+        +res-ab(sm)
+            font-size: 20px
+            
+/* CTA Three */
+.cta-three-content
+    max-width: 550px
+    padding: 100px 80px
+    +res-bl(sm)
+        +gapLR(padding, 50px)
+    +res-bl(ms)
+        +gapLR(padding, 35px)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+.cta-three-shape
+    z-index: -1
+    +poRB(8%, 0)
+    max-width: 25%
+    
+.cta-three-image
+    height: 100%
+    min-height: 400px

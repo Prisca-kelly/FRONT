@@ -1,0 +1,149 @@
+$flaticon_ravelo-font: "flaticon_ravelo";
+
+@font-face {
+    font-family: $flaticon_ravelo-font;
+    src: url("./flaticon_ravelo.woff2?6a17e9e26dbb5a2360f515e123c8e921") format("woff2"),
+url("./flaticon_ravelo.woff?6a17e9e26dbb5a2360f515e123c8e921") format("woff"),
+url("./flaticon_ravelo.eot?6a17e9e26dbb5a2360f515e123c8e921#iefix") format("embedded-opentype"),
+url("./flaticon_ravelo.ttf?6a17e9e26dbb5a2360f515e123c8e921") format("truetype"),
+url("./flaticon_ravelo.svg?6a17e9e26dbb5a2360f515e123c8e921#flaticon_ravelo") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_ravelo !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_ravelo-map: (
+    "flight": "\f101",
+    "tent": "\f102",
+    "cycling": "\f103",
+    "kayak": "\f104",
+    "travel-agency": "\f105",
+    "coffee-cup": "\f106",
+    "bed": "\f107",
+    "double-quotes": "\f108",
+    "save-money": "\f109",
+    "travel-1": "\f10a",
+    "booking": "\f10b",
+    "guidepost": "\f10c",
+    "climbing": "\f10d",
+    "online-chat": "\f10e",
+    "route": "\f10f",
+    "best-price": "\f110",
+    "business-travel": "\f111",
+    "plane": "\f112",
+    "signpost": "\f113",
+    "key": "\f114",
+    "award-symbol": "\f115",
+    "tourism": "\f116",
+    "hiking": "\f117",
+    "fishing": "\f118",
+    "man": "\f119",
+    "kayak-1": "\f11a",
+    "bonfire": "\f11b",
+    "flashlight": "\f11c",
+    "meditation": "\f11d",
+    "placeholder": "\f11e",
+    "quote": "\f11f",
+);
+
+.flaticon-flight:before {
+    content: map-get($flaticon_ravelo-map, "flight");
+}
+.flaticon-tent:before {
+    content: map-get($flaticon_ravelo-map, "tent");
+}
+.flaticon-cycling:before {
+    content: map-get($flaticon_ravelo-map, "cycling");
+}
+.flaticon-kayak:before {
+    content: map-get($flaticon_ravelo-map, "kayak");
+}
+.flaticon-travel-agency:before {
+    content: map-get($flaticon_ravelo-map, "travel-agency");
+}
+.flaticon-coffee-cup:before {
+    content: map-get($flaticon_ravelo-map, "coffee-cup");
+}
+.flaticon-bed:before {
+    content: map-get($flaticon_ravelo-map, "bed");
+}
+.flaticon-double-quotes:before {
+    content: map-get($flaticon_ravelo-map, "double-quotes");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon_ravelo-map, "save-money");
+}
+.flaticon-travel-1:before {
+    content: map-get($flaticon_ravelo-map, "travel-1");
+}
+.flaticon-booking:before {
+    content: map-get($flaticon_ravelo-map, "booking");
+}
+.flaticon-guidepost:before {
+    content: map-get($flaticon_ravelo-map, "guidepost");
+}
+.flaticon-climbing:before {
+    content: map-get($flaticon_ravelo-map, "climbing");
+}
+.flaticon-online-chat:before {
+    content: map-get($flaticon_ravelo-map, "online-chat");
+}
+.flaticon-route:before {
+    content: map-get($flaticon_ravelo-map, "route");
+}
+.flaticon-best-price:before {
+    content: map-get($flaticon_ravelo-map, "best-price");
+}
+.flaticon-business-travel:before {
+    content: map-get($flaticon_ravelo-map, "business-travel");
+}
+.flaticon-plane:before {
+    content: map-get($flaticon_ravelo-map, "plane");
+}
+.flaticon-signpost:before {
+    content: map-get($flaticon_ravelo-map, "signpost");
+}
+.flaticon-key:before {
+    content: map-get($flaticon_ravelo-map, "key");
+}
+.flaticon-award-symbol:before {
+    content: map-get($flaticon_ravelo-map, "award-symbol");
+}
+.flaticon-tourism:before {
+    content: map-get($flaticon_ravelo-map, "tourism");
+}
+.flaticon-hiking:before {
+    content: map-get($flaticon_ravelo-map, "hiking");
+}
+.flaticon-fishing:before {
+    content: map-get($flaticon_ravelo-map, "fishing");
+}
+.flaticon-man:before {
+    content: map-get($flaticon_ravelo-map, "man");
+}
+.flaticon-kayak-1:before {
+    content: map-get($flaticon_ravelo-map, "kayak-1");
+}
+.flaticon-bonfire:before {
+    content: map-get($flaticon_ravelo-map, "bonfire");
+}
+.flaticon-flashlight:before {
+    content: map-get($flaticon_ravelo-map, "flashlight");
+}
+.flaticon-meditation:before {
+    content: map-get($flaticon_ravelo-map, "meditation");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon_ravelo-map, "placeholder");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_ravelo-map, "quote");
+}

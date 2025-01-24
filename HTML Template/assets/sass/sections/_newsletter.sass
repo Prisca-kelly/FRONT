@@ -1,0 +1,38 @@
+/*******************************************************/
+/***************** ## Newsletter Area *****************/
+/*******************************************************/
+.newsletter-content-part
+    max-width: 545px
+    > p
+        margin-bottom: 0
+        +res-ab(xs)
+            margin-left: 30px
+            
+.text-white.newsletter-content-part .newsletter-form input
+    color: $base-color
+            
+.newsletter-bg-image
+    +poLB(0)
+    z-index: -1
+    text-align: center
+    width: calc(50vw - 140px)
+    +res-bl(lg)
+        width: 100%
+
+.newsletter-image-part
+    min-height: 500px
+    +res-ab(lg)
+        height: 100%
+        width: calc(50vw - 200px)
+        +poLT(calc(50vw - 140px), 0)
+            
+.newsletter-three
+    .newsletter-image-part
+        right: 0
+        left: auto
+        +res-ab(lg)
+            width: calc(50vw - 15px)
+    .newsletter-bg-image
+        +res-ab(lg)
+            width: calc(50vw - 15px)
+            

@@ -1,0 +1,110 @@
+<section class="ticket-form">
+    <h2>Formulaire de demande de billets</h2>
+    <form action="/submit-ticket" method="POST" >
+        <div>
+            <label for="destination">Destination :</label>
+            <input type="text" id="destination" name="destination" placeholder="Ex : Paris, France" required aria-required="true">
+        </div>
+        <div>
+            <label for="departure-date">Date de départ :</label>
+            <input type="date" id="departure-date" name="departure-date" required aria-required="true">
+        </div>
+        <div>
+            <label for="return-date">Date de retour :</label>
+            <input type="date" id="return-date" name="return-date">
+        </div>
+        <div>
+            <label for="class">Classe souhaitée :</label>
+            <select id="class" name="class" required aria-required="true">
+                <option value="" disabled selected>Choisissez une classe</option>
+                <option value="economique">Économique</option>
+                <option value="affaires">Affaires</option>
+                <option value="premiere">Première</option>
+            </select>
+        </div>
+        <div>
+            <label for="passengers">Nombre de passagers :</label>
+            <input type="number" id="passengers" name="passengers" min="1" placeholder="Ex : 2" required aria-required="true">
+        </div>
+        <div>
+            <label for="remarks">Remarques optionnelles :</label>
+            <textarea id="remarks" name="remarks" placeholder="Ex : Compagnie préférée, escales, etc." rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Envoyer ma demande</button>
+        </div>
+    </form>
+    <p>Merci ! Notre équipe vous contactera sous peu avec les meilleures options.</p>
+    <p><strong>NB :</strong> Précisez le nombre de passagers enfants, adultes, bébés et également si vous avez un animal de compagnie.</p>
+</section>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ticket-form {
+        background-color: #0be6c8;
+        padding: 2rem;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+    }
+
+    .ticket-form h2 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+
+    .ticket-form form div {
+        margin-bottom: 1rem;
+    }
+
+    .ticket-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .ticket-form input,
+    .ticket-form textarea,
+    .ticket-form select,
+    .ticket-form button {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .ticket-form select {
+        background-color: #ffffff;
+        color: #333;
+    }
+
+    .ticket-form textarea {
+        resize: none;
+    }
+
+    .ticket-form button {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .ticket-form button:hover {
+        background-color: #e65550;
+    }
+
+    .ticket-form p {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #555;
+    }
+</style>

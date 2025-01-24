@@ -1,0 +1,112 @@
+/*******************************************************/
+/******************* ## Banner Area *******************/
+/*******************************************************/
+.page-banner-area
+    display: flex
+    overflow: hidden
+    min-height: 590px
+    border-radius: 10px
+    align-items: flex-end
+    flex-direction: column
+    justify-content: flex-end
+    +gapLR(margin, 30px)
+    +res-bl(lg)
+        +gapLR(margin, 15px)
+    +res-bl(xxl)
+        min-height: 450px
+    +res-bl(xl)
+        min-height: 400px
+    +res-bl(md)
+        min-height: 350px
+    +res-bl(sm)
+        min-height: 300px
+    &:before
+        +poLT(0)
+        content: ''
+        +size(100%)
+        background: linear-gradient(180deg, rgba(29, 35, 31, 0) 0%, #1D231F 100%)
+    
+.banner-inner
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    justify-content: space-between
+    .page-title
+        max-width: 800px
+        margin-right: 15px
+        +res-ab(xl)
+            font-size: 65px
+        +res-bl(md)
+            font-size: 35px
+        +res-bl(sm)
+            font-size: 30px
+    .breadcrumb
+        +res-ab(md)
+            font-size: 20px
+        .breadcrumb-item
+            font-weight: 300
+            color: $heading-color
+            &+.breadcrumb-item
+                padding-left: 15px
+                &:before
+                    font-weight: 300
+                    content: "\f054"
+                    font-size: 0.8em
+                    padding-right: 15px
+                    color: $heading-color
+                    font-family: "Font Awesome 5 Pro"
+            &.active
+                font-weight: 500
+                text-decoration: underline
+                
+.text-white .breadcrumb .breadcrumb-item
+    color: white
+    &+.breadcrumb-item:before
+        color: white
+        
+.banner-and-search
+    +res-bl(lg)
+        +gapLR(padding, 10px)
+    > .row
+        --bs-gutter-x: 10px
+        
+.search-banner
+    min-height: 400px
+    margin-bottom: 10px
+    border-radius: 10px
+    background-size: cover
+    height: calc(100% - 10px)
+    background-position: center
+    .content
+        background-repeat: repeat-x
+        padding: 15px 20px 100px 35px
+        border-radius: 10px 10px 0 0
+        +res-ab(ms)
+            display: flex
+        +res-bl(xs)
+            padding-left: 25px
+        .left
+            color: white
+            font-size: 30px
+            font-weight: 300
+            line-height: 1.4
+            letter-spacing: -1px
+            +gapTB(padding, 20px)
+            > i
+                margin-left: 10px
+            > b
+                font-weight: 600
+            span > b
+                font-weight: 700
+        .right
+            flex: none
+            +size(180px)
+            text-align: center
+            +flexcenter(center)
+            color: $heading-color
+            background-size: cover
+            flex-direction: column
+            span
+                font-size: 2em
+                font-weight: 500
+                line-height: 0.9

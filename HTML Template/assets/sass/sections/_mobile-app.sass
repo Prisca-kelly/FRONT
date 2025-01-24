@@ -1,0 +1,52 @@
+/*******************************************************/
+/***************** ## Mobile App Area *****************/
+/*******************************************************/
+.mobile-app-content
+    max-width: 475px
+    .section-title h2
+        +res-bt(lg, xl)
+            font-size: 40px
+    .list-style-two
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        li
+            width: 48%
+            +res-bl(ms)
+                width: 100%
+    
+.google-play-app-store
+    display: flex
+    align-items: center
+    a
+        max-width: 205px
+        &:first-child
+            margin-right: 25px
+        img
+            border-radius: 8px
+            
+.mobile-app-images
+    z-index: 1
+    position: relative
+    max-width: max-content
+    +res-ab(xl)
+        margin-left: auto
+    .images
+        display: flex
+        img
+            &:nth-child(1)
+                max-width: 23%
+                margin-bottom: 3.5%
+                align-self: flex-end
+            &:nth-child(2)
+                max-width: 50%
+                margin-bottom: 1%
+                margin-left: -0.7%
+            &:nth-child(3)
+                max-width: 26%
+                margin-top: 10%
+                align-self: flex-start
+    .bg
+        width: 83%
+        z-index: -1
+        +poLB(6%, 0)

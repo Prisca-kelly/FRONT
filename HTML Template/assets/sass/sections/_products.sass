@@ -1,0 +1,189 @@
+/*******************************************************/
+/****************** ## Products Area ******************/
+/*******************************************************/
+.product-item
+    margin-bottom: 40px
+    .image
+        max-height: 400px
+        position: relative
+        border-radius: 7px
+        margin-bottom: 18px
+        padding-bottom: 110%
+        background: $lighter-color
+        border: 1px solid $border-color
+        img
+            +absmiddle()
+            max-width: 80%
+            max-height: 80%
+    .content
+        h6
+            margin-bottom: 0
+
+.product-slider
+    +gapLR(margin, -15px)
+    .product-item
+        +gapLR(margin, 15px)
+    .slick-dots
+        margin-top: 10px
+            
+.shop-shorter
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    +res-bl(xl)
+        margin-right: -10px
+    .grid-list
+        display: flex
+        align-items: center
+        li
+            margin-right: 15px
+    .nice-select
+        font-size: 14px
+        max-width: 190px
+        margin-bottom: 10px
+        border-radius: 22px
+        width: calc(50% - 10px)
+        padding: 1px 35px 1px 20px
+        border: 1px solid $border-color
+        &:not(:last-child)
+            margin-right: 10px
+        &:after
+            +size(8px)
+            right: 20px
+            margin-top: -5px
+    .sort-text
+        font-weight: 500
+        color: $heading-color
+        
+    &.style-two
+        .sort-text
+            +res-ab(sm)
+                font-size: 20px
+        .nice-select
+            width: auto
+            font-size: 16px
+            border-color: black
+            +res-ab(sm)
+                max-width: 230px
+                border-radius: 25px
+                padding: 4px 45px 4px 25px
+                
+/* Product Details */
+.preview-images
+    margin-bottom: 30px
+    border-radius: 10px
+    background: $lighter-color
+    border: 1px solid $border-color
+    .preview-item
+        position: relative
+        padding-bottom: 94%
+        img
+            +absmiddle()
+            max-width: 60%
+            max-height: 70%
+.thumb-images
+    justify-content: space-between
+    .thumb-item
+        position: relative
+        padding-bottom: 30%
+        border-radius: 7px
+        width: calc(33% - 18px)
+        background: $lighter-color
+        border: 1px solid $border-color
+        img
+            +absmiddle()
+            max-width: 65%
+            max-height: 70%
+
+.product-details-content
+    +res-ab(xl)
+        margin-top: 55px
+        max-width: 520px
+        margin-left: auto
+    .section-title
+        h2
+            margin-bottom: 7px
+    .ratting
+        i
+            font-size: 16px
+    .price
+        display: block
+        @extend %h5
+        +res-bl(xs)
+            font-size: 18px
+    .add-to-cart
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        h6
+            margin-bottom: 0
+            margin-top: 15px
+            margin-right: 30px
+        .theme-btn
+            margin-top: 15px
+        input
+            font-size: 22px
+            font-weight: 600
+            max-width: 130px
+            margin-top: 15px
+            margin-right: 20px
+            padding: 10px 30px
+            border-radius: 25px
+            background: transparent
+            border: 1px solid $border-color
+    .wishlist
+        align-items: center
+        display: inline-flex
+        i
+            margin-right: 5px
+    .category-tags li
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        b
+            min-width: 85px
+            font-weight: 600
+            margin-right: 5px
+            margin-bottom: 5px
+            color: $heading-color
+        a
+            margin-bottom: 5px
+            display: inline-block
+            &:not(:last-child)
+                margin-right: 5px
+                &:after
+                    content: ','
+            
+.product-tab
+    margin-right: -10px
+    li
+        margin-right: 10px
+        margin-bottom: 10px
+        a
+            cursor: pointer
+            font-weight: 600
+            transition: 0.5s
+            padding: 10px 35px
+            border-radius: 30px
+            display: inline-block
+            color: $heading-color
+            border: 1px solid $border-color
+            +res-bl(md)
+                font-size: 14px
+                padding: 7px 20px
+            i
+                margin-left: 10px
+                transform: rotate(-45deg)
+            &.active
+                color: white
+                background: $primary-color
+                border-color: $primary-color
+                
+.tab-content
+    .list-style-two li
+        font-size: 16px
+        font-weight: 400
+        &:before
+            +size(20px)
+            font-size: 10px
+            line-height: 20px

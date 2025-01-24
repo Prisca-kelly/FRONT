@@ -1,0 +1,49 @@
+/*******************************************************/
+/******************** ## Team Area ********************/
+/*******************************************************/
+.team-area
+    &:before
+        +poLT(0)
+        z-index: -1
+        content: ''
+        +size(100%)
+        background: linear-gradient(1.41deg, rgba(29, 35, 31, 0.3) 1.2%, #1D231F 98.81%)
+    
+.team-item
+    margin-bottom: 30px
+    img
+        width: 100%
+        border-radius: 10px
+    .content
+        +poLB(10px)
+        right: 10px
+        background: white
+        text-align: center
+        border-radius: 10px
+        padding: 15px 10px
+        h6
+            margin-bottom: 0
+        .designation
+            display: block
+        .social-style-one
+            display: none
+            margin-top: 10px
+            margin-bottom: 5px
+            a
+                +size(40px)
+                line-height: 40px
+                display: inline-block
+                &:not(:hover)
+                    color: $primary-color
+                    background: rgba($primary-rgb, 0.15)
+                
+.guide-shapes
+    .shape
+        top: 0
+        z-index: -1
+        max-width: 15%
+        position: absolute
+        &.one
+            left: 0
+        &.two
+            right: 2%

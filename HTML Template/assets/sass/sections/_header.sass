@@ -1,0 +1,613 @@
+/*******************************************************/
+/******************* ## Header style *******************/
+/*******************************************************/
+.main-header
+    position: relative
+    left: 0px
+    top: 0px
+    z-index: 999
+    width: 100%
+    transition: all 500ms ease
+    .header-upper
+        z-index: 5
+        width: 100%
+        position: relative
+        transition: all 500ms ease
+    .logo-outer
+        flex: none
+        +res-bl(lg)
+            display: none
+    .logo
+        z-index: 9
+        padding: 2px 0
+        position: relative
+    &.menu-absolute
+        .header-upper
+            position: absolute
+    &.fixed-header
+        .header-upper
+            top: 0
+            left: 0
+            position: fixed
+            animation: sticky  1s
+            box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10)
+        .main-menu
+            .navbar-collapse
+                > ul
+                    > li
+                        +res-ab(lg)
+                            +gapTB(padding, 25px)
+    
+.nav-outer
+    +res-bl(lg)
+        width: 100%
+ 
+/** Header Main Menu **/
+.main-menu
+    +res-bl(lg)
+        width: 100%
+    .mobile-logo
+        margin-right: auto
+        +res-bl(sm)
+            max-width: 150px
+    .collapse
+        +res-bl(lg)
+            overflow: auto
+    .navbar-collapse
+        padding: 5px
+        > ul
+            display: flex
+            +res-bl(lg)
+                display: block
+                padding: 25px 0
+                background: #f9f9f9
+                box-shadow: inset 0px 0px 30px 0px rgba(87, 95, 245, .10)
+                > li:last-child
+                    border-bottom: 1px solid $border-color
+        +res-bl(lg)
+            left: 0
+            width: 100%
+            position: absolute
+            max-height: calc(100vh - 80px)
+        li
+            padding: 35px 20px
+            +flexcenter(space-between)
+            +res-bl(xxl)
+                +gapLR(padding, 10px)
+            +res-bl(lg)
+                display: block
+                padding: 0 15px
+                border-top: 1px solid $border-color
+            &.dropdown .dropdown-btn
+                cursor: pointer
+                margin-left: 5px
+                margin-bottom: -3px
+                color: $heading-color
+                +res-bl(lg)
+                    position: absolute
+                    right: 10px
+                    top: 0
+                    width: 50px
+                    height: 43px
+                    border-left: 1px solid $border-color
+                    text-align: center
+                    line-height: 43px
+            a
+                display: block
+                opacity: 1
+                position: relative
+                color: $heading-color
+                font-family: $heading-font
+                text-transform: capitalize
+                transition: all 500ms ease
+                +res-ab(xs)
+                    font-size: 18px
+                +res-bl(lg)
+                    padding: 10px 10px
+                    line-height: 22px
+                &:hover
+                    color: $primary-color
+                    text-decoration: underline
+            &.current > a, &.current-menu-item > a
+                font-weight: 500
+            li
+                border-top: 1px solid $border-color
+                a
+                    text-transform: capitalize
+                    &:before
+                        display: none
+            .megamenu
+                position: absolute
+                left: 0px
+                top: 100%
+                width: 100%
+                z-index: 100
+                display: none
+                padding: 20px 0
+                background: #ffffff
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +clearfix
+                +res-bl(lg)
+                    position: relative
+                    box-shadow: none
+                    width: 100%
+                    .container
+                        max-width: 100%
+                    .row
+                        margin: 0px
+                ul
+                    display: block
+                    position: relative
+                    top: 0
+                    width: 100%
+                    box-shadow: none
+            ul
+                position: absolute
+                left: inherit
+                top: 100%
+                min-width: 250px
+                z-index: 100
+                display: none
+                background: white
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +res-bl(lg)
+                    position: relative
+                    display: none
+                    width: 100%
+                    box-shadow: none
+                    background: transparent
+                    +clearfix
+                    +res-bl(xs)
+                        min-width: auto
+                li
+                    width: 100%
+                    padding: 7px 20px
+                    +res-bl(lg)
+                        padding: 0 15px
+                    ul
+                        left: 100%
+                        top: 0%
+                        +res-bl(lg)
+                            left: auto
+
+    .navbar-header
+        display: none
+        +res-bl(lg)
+            +flexcenter(start)
+        .navbar-toggle
+            float: right
+            padding: 4px 0
+            cursor: pointer
+            background: transparent
+            +res-bl(lg)
+                margin-right: 12px
+            .icon-bar
+                background: $base-color
+                height: 2px
+                width: 30px
+                display: block
+                margin: 7px 0
+                
+/* Header One */
+.main-header.header-one
+    +res-ab(lg)
+        .main-menu
+            .navbar-collapse
+                padding: 5px
+                border-radius: 40px
+                background: $lighter-color
+                border: 1px solid $border-color
+                .navigation
+                    > li
+                        padding: 0
+                        transition: 0.5s
+                        border-radius: 30px
+                        > a
+                            padding: 15px 30px
+                            +res-bt(lg, lp)
+                                padding: 10px 20px
+                        &.dropdown
+                            > a
+                                padding-right: 8px
+                            > .dropdown-btn
+                                margin-left: 0
+                                transition: 0.5s
+                                padding-right: 30px
+                                +res-bt(lg, lp)
+                                    padding-right: 20px
+                        &:hover
+                            background: $primary-color
+                            > a,
+                            > .dropdown-btn
+                                color: white
+        &.fixed-header
+            .header-upper
+                +gapTB(padding, 10px)
+                
+/* Header Two */
+.main-header.header-two
+    +res-ab(lg)
+        display: none
+    .header-upper
+        background: white
+        box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1)
+    .menu-sidebar
+        > button
+            border-color: $heading-color
+            .icon-bar
+                background: $heading-color
+
+.for-sidebar-menu.page-wrapper
+    +res-ab(lg)
+        padding-left: 315px
+        padding-right: 10px
+    .hidden-bar
+        top: 10px
+        right: auto
+        border: none
+        width: 295px
+        left: -315px
+        background: white
+        border-radius: 10px
+        height: calc(100% - 20px)
+        max-width: calc(100% - 20px)
+        box-shadow: 0px 4px 40px rgba(179, 179, 179, 0.25)
+        +res-ab(lg)
+            left: 10px
+            opacity: 1
+            visibility: visible
+        .inner-box
+            padding: 40px 30px
+            .cross-icon
+                color: $base-color
+                +res-ab(lg)
+                    display: none
+            .theme-btn
+                margin-left: 20px
+    .form-back-drop
+        left: -100%
+                
+.side-content-visible
+    .for-sidebar-menu.page-wrapper
+        .hidden-bar
+            left: 10px
+        .form-back-drop
+            +res-bl(lg)
+                left: 0
+        
+/* Sidebar Menu */
+.sidebar-menu
+    li
+        a
+            display: block
+            font-size: 18px
+            font-weight: 500
+            padding: 6px 20px
+            border-radius: 20px
+            color: $heading-color
+            text-transform: capitalize
+        &.dropdown
+            > ul
+                display: none
+            .dropdown-btn
+                position: absolute
+                right: 5px
+                top: 0
+                width: 45px
+                height: 40px
+                cursor: pointer
+                line-height: 40px
+                text-align: center
+        ul
+            margin-top: 5px
+            margin-left: 10px
+    > li
+        margin-bottom: 12px
+        &:hover,
+        &.active
+            > a
+                color: white
+                background: $primary-color
+            > .dropdown-btn
+                color: white
+        
+                
+/* Menu Btns */
+.menu-btns
+    display: flex
+    align-items: center
+    > button
+        font-size: 20px
+        position: relative
+        margin-left: 30px
+        background-color: transparent
+        +res-ab(lp)
+            margin-right: 60px
+        +res-bl(lp)
+            margin-right: 35px
+        +res-bl(ms)
+            display: none
+        span
+            +poLB(95%)
+            color: white
+            font-size: 14px
+            font-family: $heading-font
+            +circle($primary-color, 20px)
+            +res-bl(lg)
+                bottom: 80%
+            &.bgc-secondary
+                color: $heading-color
+                background-color: $secondary-color
+    .theme-btn
+        margin-right: 10px
+        +res-bl(xl)
+            display: none
+        
+/* Header Search */
+.nav-search
+    position: relative
+    margin-right: 10px
+    +res-bl(xs)
+        display: none
+    > button
+        +size(50px)
+        border-radius: 50%
+        background: transparent
+        border: 1px solid rgba(255, 255, 255, 0.1)
+    form
+        position: absolute
+        width: 320px
+        top: 100%
+        right: 0
+        z-index: 777
+        +flexcenter(center)
+        background-color: #fff
+        animation: fadeIn 0.5s
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05)
+        +res-bl(ms)
+            width: 300px
+        +res-bl(xs)
+            width: 250px
+        &.hide
+            display: none
+        input
+            border: none
+            padding: 15px 5px 15px 25px
+        button
+            background: transparent
+            padding: 15px 20px 15px 0
+            
+            
+/* White Menu */
+.main-header.white-menu
+    .top-left
+        font-weight: 400
+        +gapTB(padding, 12px)
+        color: rgba(255, 255, 255, 0.65)
+        &:before
+            display: none
+    .top-right ul
+        z-index: 1
+        position: relative
+        +gapTB(padding, 16px)
+        +res-ab(lg)
+            display: inline-flex
+        li > i
+            color: white
+        &:before
+            content: ''
+            z-index: -1
+            height: 100%
+            width: 100vw
+            +poLT(-80px, 0)
+            background: $heading-color
+            +res-bl(lg)
+                left: 50%
+                transform: translate(-50%)
+    +res-ab(lg)
+        .navbar-collapse > ul > li
+            > a,
+            > .dropdown-btn
+                color: white
+    .main-menu .navbar-header .navbar-toggle .icon-bar
+        background: white
+    .header-number,
+    .header-number a,
+    .menu-btns > button,
+    .nav-search > button
+        color: white
+    .menu-sidebar > button
+        border-color: rgba(255, 255, 255, 0.1)
+        .icon-bar
+            background: white
+    
+    &.fixed-header .header-upper
+        background: #222222
+        
+    &.header-one
+        .main-menu
+            .navbar-collapse
+                background: #232C26
+                border-color: rgba(255, 255, 255, 0.1)
+    
+/* Menu Sidebar */
+.menu-sidebar
+    display: flex
+    > button
+        +size(50px)
+        border-radius: 50%
+        +flexcenter(center)
+        flex-direction: column
+        border: 1px solid $border-color
+        .icon-bar
+            width: 20px
+            height: 2px
+            margin: 3px 0
+            transition: 0.3s
+            background: $heading-color
+            &:nth-child(2)
+                width: 25px
+        &:hover .icon-bar
+            width: 25px
+        
+/** hidden-sidebar *
+.hidden-bar
+    position: fixed
+    right: -350px
+    top: 0px
+    opacity: 0
+    width: 350px
+    height: 100%
+    z-index: 99999
+    overflow-y: auto
+    visibility: hidden
+    background-color: #222222
+    border-left: 1px solid #231b26
+    transition: all 0.5s ease
+    +res-bl(xs)
+        width: 300px
+    .social-style-one
+        a
+            +size(40px)
+            line-height: 40px
+
+.side-content-visible .hidden-bar
+    right: 0px
+    opacity: 1
+    visibility: visible
+
+.hidden-bar .inner-box
+    position: relative
+    padding: 100px 40px 50px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .cross-icon
+        position: absolute
+        right: 30px
+        top: 30px
+        cursor: pointer
+        color: #ffffff
+        font-size: 20px
+        transition: all 500ms ease
+    h4
+        position: relative
+        color: #ffffff
+        font-size: 25px
+        margin-bottom: 35px
+
+/*Appointment Form
+.hidden-bar .appointment-form
+    position: relative
+
+    .form-group
+        position: relative
+        margin-bottom: 20px
+
+    input
+        &[type="text"], &[type="email"]
+            position: relative
+            display: block
+            width: 100%
+            line-height: 23px
+            padding: 10px 25px
+            color: #ffffff
+            font-size: 16px
+            background: none
+            transition: all 300ms ease
+            border: 1px solid rgba(255, 255, 255, 0.1)
+
+    textarea
+        position: relative
+        display: block
+        width: 100%
+        line-height: 23px
+        padding: 10px 25px
+        color: #ffffff
+        font-size: 16px
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        background: none
+        transition: all 300ms ease
+        resize: none
+
+    input::placeholder
+        font-size: 14px
+        color: #bdbdbd
+
+    textarea
+        &::placeholder
+            font-size: 14px
+            color: #bdbdbd
+
+    .form-group button
+        width: 100%
+        font-size: 16px
+        padding: 10px 15px
+        margin-bottom: 20px
+        border-color: white
+
+.form-back-drop
+    position: fixed
+    left: 100%
+    top: 0px
+    width: 100%
+    height: 100%
+    opacity: 0
+    background: rgba(0, 0, 0, 0.7)
+    visibility: hidden
+    z-index: 9990
+    transition: all 0.5s ease
+
+.side-content-visible .form-back-drop
+    opacity: 1
+    left: 0
+    visibility: visible
+    
+    
+// Header Top
+.header-top
+    +res-bl(lg)
+        padding-bottom: 20px
+    +res-bl(md)
+        display: none
+    .top-left
+        color: $heading-color
+        font-weight: 500
+        line-height: 20px
+        +gapTB(padding, 18px)
+        position: relative
+        z-index: 1
+        +res-ab(lg)
+            &:before
+                content: ''
+                +poRT(0)
+                background: $primary-color
+                +size(50vw, 100%)
+                clip-path: polygon(0 0, calc(100% - 20px) 0%, 100% 100%, 0% 100%)
+                z-index: -1
+        +res-bl(lg)
+            color: rgba(255, 255, 255, 0.65)
+    .top-right
+        ul
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            +res-ab(lg)
+                justify-content: flex-end
+            li
+                line-height: 1
+                &:not(:last-child)
+                    margin-right: 50px
+                    padding-right: 50px
+                    border-right: 2px solid rgba(255, 255, 255, 0.2)
+                    +res-bl(xl)
+                        margin-right: 20px
+                        padding-right: 20px
+                > i
+                    color: $primary-color
+                    margin-right: 10px
+                a
+                    color: rgba(255, 255, 255, 0.65)
+                    &:hover
+                        color: $primary-color
+        

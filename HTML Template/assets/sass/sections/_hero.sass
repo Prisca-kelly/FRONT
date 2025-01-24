@@ -1,0 +1,219 @@
+/*******************************************************/
+/******************** ## Hero Area ********************/
+/*******************************************************/
+.hero-title
+    z-index: 2
+    color: white
+    font-weight: 700
+    font-size: 200px
+    position: relative
+    text-align: center
+    text-transform: uppercase
+    +res-bl(lb)
+        font-size: 150px
+    +res-bl(lp)
+        font-size: 120px
+    +res-bl(lg)
+        font-size: 80px
+    +res-bl(md)
+        font-size: 60px
+    +res-bl(sm)
+        font-size: 50px
+    +res-bl(ms)
+        font-size: 40px
+    +res-bl(xs)
+        font-size: 35px
+        
+.main-hero-image
+    height: 790px
+    margin-top: -8%
+    position: relative
+    border-radius: 20px
+    +res-bl(xxl)
+        height: 555px
+    +res-bl(lg)
+        height: 450px
+    +res-bl(sm)
+        height: 400px
+    &:before
+        +poLT(0)
+        content: ''
+        +size(100%)
+        background: linear-gradient(180deg, #1D231F 0%, rgba(29, 35, 31, 0) 100%)
+    
+.search-filter-inner
+    display: flex
+    z-index: 2
+    position: relative
+    margin-top: -50px
+    background: white
+    border-radius: 12px
+    padding: 28px 55px 10px
+    box-shadow: 10px 4px 60px rgba(197, 197, 197, 0.25)
+    +res-bl(lp)
+        +gapLR(padding, 35px)
+    +res-bl(xl)
+        flex-wrap: wrap
+    .filter-item
+        min-width: 18%
+        padding-left: 28px
+        position: relative
+        margin-bottom: 15px
+        padding-right: 20px
+        margin-right: 30px
+        border-right: 1px solid $border-color
+        +res-bl(md)
+            margin-right: 15px
+            padding-right: 5px
+            width: calc(50% - 15px)
+        +res-bl(ms)
+            width: 100%
+            margin-right: 0
+        .icon
+            +poLT(0, 3px)
+        .title
+            font-size: 14px
+        .nice-select
+            border: none
+            line-height: 1.1
+            padding: 0 20px 0 0
+            .current
+                font-weight: 500
+                color: $heading-color
+            &:after
+                top: 0
+                +size(8px)
+    .search-button
+        align-self: center
+        margin-bottom: 15px
+        +res-ab(xl)
+            margin-left: auto
+            
+    &.style-two
+        margin-top: 0
+        border-radius: 10px
+        flex-direction: column
+        padding: 40px 30px 25px
+        background: $heading-color
+        +res-bl(xs)
+            +gapLR(padding, 20px)
+        .filter-item
+            width: 100%
+            max-width: none
+            margin-right: 0
+            border-right: none
+            margin-bottom: -1px
+            border-radius: 10px
+            background: #292E2A
+            padding: 15px 20px 20px 55px
+            border: 1px solid rgba(255, 255, 255, 0.07)
+            .icon
+                top: 20px
+                left: 30px
+            .title
+                color: #939393
+            .nice-select
+                background-color: transparent
+                .current
+                    color: white
+                .list li
+                    color: $base-color
+            
+/* Hero Two */
+.hero-area-two
+    +res-ab(xl)
+        padding-bottom: 160px
+
+.hero-image-two
+    min-height: 500px
+    border-radius: 10px
+    +res-ab(xl)
+        +poRB(0)
+        width: calc(50vw - 155px)
+        height: calc(100% - 10px)
+    
+.hero-content-two
+    max-width: 535px
+    +res-ab(lg)
+        padding-right: 20px
+    +res-bl(xl)
+        margin-bottom: 55px
+    h1
+        margin-bottom: 22px
+        letter-spacing: -2px
+        +res-bl(lb)
+            font-size: 72px
+        +res-bt(lg, lp)
+            font-size: 65px
+        +res-bl(md)
+            font-size: 55px
+        +res-bl(sm)
+            font-size: 50px
+        +res-bl(ms)
+            font-size: 45px
+        +res-bl(xs)
+            font-size: 40px
+    p
+        line-height: 1.66
+        +res-ab(xs)
+            font-size: 18px
+            
+/* Hero Three */
+.hero-area-three
+    +gapLR(margin, 30px)
+    +res-bl(lg)
+        +gapLR(margin, 15px)
+
+.hero-content-three
+    .subtitle
+        +res-ab(lg)
+            font-size: 20px
+    h1
+        font-size: 80px
+        font-weight: 500
+        margin-bottom: 50px
+        letter-spacing: -2px
+        +res-bl(xl)
+            font-size: 65px
+        +res-bl(md)
+            font-size: 55px
+            margin-bottom: 30px
+        +res-bl(sm)
+            font-size: 50px
+        +res-bl(ms)
+            font-size: 42px
+        +res-bl(xs)
+            font-size: 36px
+    p
+        +res-ab(xxl)
+            font-size: 27px
+        +res-bt(md, xxl)
+            font-size: 22px
+        span
+            color: white
+            font-weight: 600
+            padding-left: 8px
+            padding-right: 5px
+            border-radius: 12px
+            background: $secondary-color
+            
+.hero-shapes
+    .shape
+        z-index: -1
+        position: absolute
+        &.one
+            left: 0
+            top: 6%
+            max-width: 30%
+        &.two
+            top: 0
+            right: 25%
+            max-width: 10%
+        &.three
+            left: 5%
+            bottom: 3%
+            max-width: 20%
+        &.four
+            bottom: 0
+            right: 3%
+            max-width: 30%

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Client</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            margin-bottom: 15px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+        .main-content {
+            width: 75%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+        .main-content h2 {
+            margin-top: 0;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h4 {
+            margin: 0 0 10px;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: #003366;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Espace Client</h1>
+    <div>
+        <a href="#">Déconnexion</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-user"></i> Profil</a></li>
+            <li><a href="#"><i class="fas fa-history"></i> Historique des commandes</a></li>
+            <li><a href="#"><i class="fas fa-credit-card"></i> Modes de paiement</a></li>
+            <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Paramètres</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> Assistance</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Bienvenue, [Nom Utilisateur]</h2>
+        <div class="card">
+            <h4>Profil</h4>
+            <p>Consultez ou modifiez vos informations personnelles.</p>
+            <a href="#" class="btn">Voir le profil</a>
+        </div>
+
+        <div class="card">
+            <h4>Historique des commandes</h4>
+            <p>Consultez vos commandes ou réservations passées.</p>
+            <a href="#" class="btn">Voir l'historique</a>
+        </div>
+
+        <div class="card">
+            <h4>Modes de paiement</h4>
+            <p>Gérez vos cartes de crédit, PayPal et autres options.</p>
+            <a href="#" class="btn">Gérer les paiements</a>
+        </div>
+
+        <div class="card">
+            <h4>Notifications</h4>
+            <p>Restez informé de vos mises à jour et offres.</p>
+            <a href="#" class="btn">Voir les notifications</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*******************************************************/
+/******************* ## Counter Area *******************/
+/*******************************************************/
+.counter-item
+    margin-bottom: 30px
+    .count-text
+        display: block
+        font-size: 55px
+        @extend %heading
+        
+    &.style-two
+        transition: 0.5s
+        padding: 50px 70px
+        margin: 0 -1px -1px 0
+        background: $lighter-color
+        border: 1px solid $border-color
+        +res-bl(xl)
+            +gapLR(padding, 50px)
+        +res-bt(xs, ms)
+            +gapLR(padding, 30px)
+        .icon
+            line-height: 1
+            font-size: 55px
+            margin-bottom: 15px
+            color: $secondary-color
+        .count-text
+            margin-bottom: 3px
+            +res-bl(ms)
+                font-size: 45px
+        .counter-title
+            display: block
+            font-size: 20px
+            +res-bl(ms)
+                font-size: 18px
+        &:hover
+            background: white
+            border-color: white
+            box-shadow: 10px 0px 60px rgba(175, 175, 175, 0.25)
+    
+.count-text
+    &.plus:after
+        content: '+'
+    &.k-plus:after
+        content: 'k+'
+    &.m-plus:after
+        content: 'm+'

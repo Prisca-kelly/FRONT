@@ -1,0 +1,53 @@
+/*******************************************************/
+/******************* ## Repeat Style ******************/
+/*******************************************************/
+// Global Extend/Inheritance 
+
+// Heading
+.heading,
+%heading
+    font-weight: 500
+    line-height: 1.23
+    color: $heading-color
+    font-family: $heading-font
+    
+%h1
+    font-weight: 600
+    @extend %heading
+    line-height: 1.2
+    font-size: $h1-size
+
+%h2
+    @extend %heading
+    font-size: $h2-size
+
+%h3
+    @extend %heading
+    font-size: $h3-size
+
+%h4
+    @extend %heading
+    font-size: $h4-size
+
+%h5
+    @extend %heading
+    line-height: 1.44
+    font-size: $h5-size
+
+%h6
+    @extend %heading
+    line-height: 1.5
+    font-size: $h6-size
+
+
+// UnderLine
+%underline
+    display: inline
+    position: relative
+    background-repeat: no-repeat
+    background-size: 0% 1.5px, 0 1.5px
+    background-position: 100% 100%, 0 85%
+    transition: background-size 0.4s linear
+    background-image: linear-gradient($heading-color, $heading-color), linear-gradient($heading-color, $heading-color)
+    &:hover
+        background-size: 0 1.5px, 100% 1.5px

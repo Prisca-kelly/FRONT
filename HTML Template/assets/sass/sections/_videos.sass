@@ -1,0 +1,87 @@
+/*******************************************************/
+/****************** ## Videos Area ********************/
+/*******************************************************/ 
+/* Video Play */
+.video-play
+    padding-left: 4px
+    +circle(white, 65px)
+    display: inline-block
+    color: $primary-color
+    &:hover
+        color: white
+        background: $primary-color
+        
+/* Video Play With Text */
+.video-play-text
+    align-items: center
+    display: inline-flex
+    > i
+        font-size: 14px
+        margin-right: 15px
+        color: $heading-color
+        +circle($lighter-color, 55px)
+        border: 1px solid $border-color
+    span
+        font-weight: 500
+        color: $heading-color
+        font-family: $heading-font
+        text-decoration: underline
+
+/* Video Section */
+.video-title-wrap
+    z-index: 2
+    position: relative
+    margin-bottom: -7%
+    +res-bl(lg)
+        margin-bottom: -5%
+
+.video-title
+    color: white
+    display: block
+    font-size: 180px
+    line-height: 0.93
+    font-family: $heading-font
+    +res-bl(xl)
+        font-size: 120px
+    +res-bl(lg)
+        font-size: 90px
+    +res-bl(md)
+        font-size: 70px
+    +res-bl(sm)
+        font-size: 50px
+    +res-bl(xs)
+        font-size: 40px
+        
+.video-area
+    .for-bg
+        +poLT(0)
+        z-index: -1
+        +size(100%, 80%)
+    .shape
+        +poRB(4%, 0)
+        max-width: 15%
+
+.video-wrap
+    +overlay($heading-color, 0.3)
+    &:before
+        z-index: 1
+        border-radius: 20px
+    img
+        border-radius: 20px
+    .video-play
+        z-index: 2
+        +size(100px)
+        +absmiddle()
+        color: $secondary-color
+        font-size: 18px
+        line-height: 100px
+        background: white
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+        animation: pulse 1.5s infinite linear
+        +res-bl(lg)
+            +size(70px)
+            line-height: 70px
+        +res-bl(ms)
+            +size(50px)
+            font-size: 15px
+            line-height: 50px

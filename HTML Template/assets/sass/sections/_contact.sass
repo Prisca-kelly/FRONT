@@ -1,0 +1,110 @@
+/*******************************************************/
+/****************** ## Contact Forms *******************/
+/*******************************************************/
+.contact-info-content
+    max-width: 385px
+
+.features-team-box
+    background: white
+    padding: 30px 40px
+    border-radius: 7px
+    border: 1px solid $border-color
+    box-shadow: 0px 10px 60px rgba(208, 208, 208, 0.25)
+    +res-bl(xl)
+        +gapLR(padding, 30px)
+    h6
+        font-size: 18px
+        margin-top: -5px
+        margin-bottom: 18px
+        padding-bottom: 18px
+        border-bottom: 1px solid $border-color
+    .feature-authors
+        > *
+            +size(40px)
+            border: none
+            line-height: 40px
+        img
+            +res-ab(xl)
+                margin-right: -8px
+        > span
+            font-size: 22px
+            
+.contact-info-item
+    padding: 40px 50px
+    border-radius: 7px
+    margin-bottom: 30px
+    background: $lighter-color
+    border: 1px solid $border-color
+    +res-bl(xl)
+        +gapLR(padding, 33px)
+    .icon
+        +size(55px)
+        font-size: 22px
+        background: white
+        line-height: 53px
+        border-radius: 50%
+        text-align: center
+        margin-bottom: 33px
+        color: $primary-color
+        border: 1px solid $border-color
+        +res-bl(xs)
+            margin-bottom: 22px
+    h5
+        margin-bottom: 12px
+        +res-bl(xs)
+            font-size: 22px
+    .text
+        display: flex
+        font-size: 20px
+        line-height: 1.6
+        +res-bl(xl)
+            font-size: 18px
+        i
+            margin-top: 8px
+            margin-right: 10px
+
+.contact-images-part
+    position: relative
+    img
+        width: 100%
+        margin-bottom: 30px
+    .circle-logo
+        +absmiddle()
+        border-radius: 50%
+        +flexcenter(center)
+        +circle(white, 250px)
+        flex-direction: column
+        border: 10px solid $secondary-color
+        img
+            width: auto
+            margin-bottom: 10px
+        +res-bl(ms)
+            +size(170px)
+            border-width: 8px
+            line-height: 170px
+            img
+                max-width: 33%
+                margin-bottom: 5px
+            .h2
+                font-size: 30px
+                
+.contact-map
+    iframe
+        margin-bottom: -10px
+        height: 616px
+        +res-bl(xl)
+            height: 500px
+        +res-bl(md)
+            height: 350px
+    
+/* Contact Form Validation */
+.has-error
+    .with-errors
+        color: red
+        margin-top: 5px
+        margin-bottom: -15px
+#msgSubmit
+    font-size: 20px
+    margin-bottom: 0
+    margin-top: 10px
+        

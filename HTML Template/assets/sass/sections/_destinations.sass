@@ -1,0 +1,559 @@
+/*******************************************************/
+/**************** ## Destinations Area ****************/
+/*******************************************************/
+.destination-item
+    color: #92A498
+    margin-bottom: 30px
+    background: #232C26
+    border-radius: 10px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    .image
+        margin: 10px
+        overflow: hidden
+        position: relative
+        border-radius: 10px
+        img
+            width: 100%
+            transition: 0.5s
+        .ratting
+            +poLT(0)
+            z-index: 2
+            color: white
+            font-size: 18px
+            padding: 30px 50px 20px
+            background: $secondary-color
+            transform: rotate(-45deg) translate(-30px, -40px)
+            i
+                color: white
+                font-size: 16px
+                margin: 0 5px 0 0
+        .heart
+            z-index: 2
+            +poRT(10px)
+            +circle(white, 40px)
+            color: $secondary-color
+    .content
+        padding: 18px 40px 40px
+        +res-bl(lb)
+            +gapLR(padding, 22px)
+        .location
+            display: block
+            margin-bottom: 3px
+            i
+                margin-right: 5px
+        h5
+            +res-bl(xs)
+                font-size: 22px
+            a
+                color: white
+                &:hover
+                    text-decoration: underline
+        
+    .destination-footer
+        flex-wrap: wrap
+        padding: 20px 40px 15px
+        +flexcenter(space-between)
+        border-top: 1px solid rgba(255, 255, 255, 0.1)
+        +res-bl(lb)
+            +gapLR(padding, 22px)
+        .price
+            font-size: 14px
+            margin-bottom: 5px
+            span
+                color: white
+                font-size: 24px
+                font-weight: 500
+        .read-more
+            color: white
+            margin-bottom: 5px
+    &:hover
+        .image
+            img
+                transform: scale(1.15)
+            
+    &.style-two
+        background: white
+        text-align: center
+        margin-bottom: 10px
+        border: 1px solid $border-color
+        .image
+            display: inline-block
+            .heart
+                +size(30px)
+                font-size: 13px
+                line-height: 30px
+            .location
+                +poRB(10px)
+                font-size: 14px
+                padding: 0 10px
+                font-weight: 500
+                background: white
+                border-radius: 7px
+                color: $heading-color
+                i
+                    margin-right: 5px
+        .content
+            position: relative
+            padding: 15px 45px 20px 30px
+            +res-bl(lp)
+                padding-left: 20px
+                padding-right: 35px
+            h6
+                margin-bottom: 0
+                +res-bl(xs)
+                    font-size: 18px
+            .time
+                font-size: 14px
+            .more
+                color: #ADADAD
+                +poRT(30px, 50%)
+                transform: translateY(-50%)
+                +res-bl(lp)
+                    right: 20px
+        &:hover
+            .more
+                color: $heading-color
+        &.bgc-lighter
+            background: $lighter-color
+            .content
+                padding: 10px 35px 15px
+            
+    &.style-three
+        display: flex
+        align-items: center
+        +res-bl(md)
+            flex-wrap: wrap
+        .image
+            flex: none
+            max-width: 48%
+            +res-bl(md)
+                max-width: none
+                width: calc(100% - 20px)
+        .content
+            padding: 30px 50px 25px 40px
+            +res-bt(xxl, lb)
+                padding-left: 15px
+                padding-right: 25px
+            +res-bt(md, lg)
+                padding-left: 25px
+                padding-right: 35px
+            +res-bl(md)
+                order: 2
+                +gapLR(padding, 50px)
+            +res-bl(ms)
+                +gapLR(padding, 35px)
+            +res-bl(xs)
+                +gapLR(padding, 20px)
+            &:first-child
+                +res-ab(lb)
+                    padding-left: 50px
+                    padding-right: 40px
+                +res-bt(xxl, lb)
+                    padding-left: 25px
+                    padding-right: 15px
+                +res-bt(md, lg)
+                    padding-left: 35px
+                    padding-right: 25px
+            h5
+                max-width: 320px
+            .list-style-one
+                display: flex
+                flex-wrap: wrap
+                margin-top: 25px
+                justify-content: space-between
+                li
+                    &:nth-child(odd)
+                        width: 55%
+                    &:nth-child(even)
+                        width: 42%
+            .destination-footer
+                margin-top: 20px
+                padding: 20px 0 0
+                
+        &.bgc-lighter
+            color: $base-color
+            background: $lighter-color
+            border: 1px solid $border-color
+            .image
+                .badge
+                    +poLT(10px)
+                    z-index: 2
+                    font-size: 16px
+                    font-weight: 500
+                    padding: 5px 12px
+                    border-radius: 10px
+                    background: $secondary-color
+                    &.bgc-pink
+                        background: #FD4C5C
+                    &.bgc-primary
+                        background: $primary-color
+            .content
+                +res-ab(lg)
+                    padding-left: 30px
+                    padding-right: 40px
+                .destination-header
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    .location
+                        margin-right: 20px
+                        margin-bottom: 5px
+                    .ratting
+                        padding: 5px 10px
+                        background: white
+                        margin-bottom: 5px
+                        border-radius: 30px
+                        i
+                            font-size: 10px
+                h5
+                    max-width: none
+                    a
+                        color: $heading-color
+                p
+                    margin-top: 12px
+                .destination-footer
+                    border-top-color: $border-color
+                    .price span
+                        color: $heading-color
+                    .read-more
+                        color: $base-color
+                        text-decoration: underline
+                        i
+                            background: $secondary-color
+                    .theme-btn.style-three
+                        margin-bottom: 5px
+                        padding: 5px 20px
+                        font-size: 14px
+        &.tour-grid
+            display: block
+            .image
+                max-width: none
+            .content
+                padding: 20px 30px 30px
+                +res-bl(xs)
+                    +gapLR(padding, 20px)
+                .destination-footer
+                    margin-top: 15px
+                    border-top: none
+                    .theme-btn.style-three:hover
+                        background: $secondary-color
+                        border-color: $secondary-color
+                
+    &.style-four
+        color: $base-color
+        background: $lighter-color
+        border: 1px solid $border-color
+        .content h5 a,
+        .destination-footer .read-more,
+        .destination-footer .price span
+            color: $heading-color
+            
+        &.image-left
+            +res-ab(sm)
+                display: flex
+            .image
+                flex: none
+                align-self: center
+                +res-ab(sm)
+                    max-width: 46%
+            .content
+                display: flex
+                padding: 50px 30px
+                flex-direction: column
+                align-items: flex-start
+                +res-bl(sm)
+                    padding-top: 30px
+                    padding-bottom: 40px
+                .price
+                    display: block
+                    font-size: 14px
+                    margin-top: auto
+                    margin-bottom: 15px
+                    span
+                        font-size: 24px
+                        font-weight: 500
+                        color: $heading-color
+                .theme-btn
+                    font-size: 14px
+                    padding: 4px 20px
+        &.no-border
+            border: none
+            margin-bottom: 50px
+            background: transparent
+            .image
+                margin: 0 0 22px
+                .badge
+                    +poLT(10px)
+                    z-index: 2
+                    font-size: 16px
+                    font-weight: 500
+                    padding: 5px 12px
+                    border-radius: 10px
+                    background: $secondary-color
+                    &.bgc-pink
+                        background: #FD4C5C
+                    &.bgc-primary
+                        background: $primary-color
+            .content
+                padding: 0
+            .destination-footer
+                border-top: none
+                padding: 18px 0 10px
+            .theme-btn.style-three
+                font-size: 14px
+                padding: 4px 20px
+                
+.text-white .destination-item.style-four.no-border
+    .image .heart i
+        color: $secondary-color
+    .content
+        .location,
+        .location i
+            color: #92A498
+    .destination-footer
+        .price
+            span
+                color: white
+    .theme-btn.style-three:not(:hover)
+        color: #92A498
+        border-color: #92A498
+        i, span
+            color: #92A498
+            
+.popular-destinations-wrap
+    border: 1px solid $border-color
+    
+.destination-active
+    +gapLR(margin, -5px)
+    .destination-item.style-two
+        padding: 30px
+        text-align: center
+        +gapLR(margin, 5px)
+        .image
+            margin: 0 0 25px
+            border-radius: 50%
+            img
+                border-radius: 50%
+                display: inline-block
+        .content
+            padding: 0
+    .slick-dots
+        margin-top: 50px
+        
+.destinations-page-area
+    .destination-item.style-two
+        .content
+            +gapLR(padding, 20px)
+            +res-bl(xs)
+                +gapLR(padding, 0)
+        
+.hot-deals-active
+    +gapLR(margin, -15px)
+    .destination-item.style-four.no-border
+        +gapLR(margin, 15px)
+    .slick-list
+        padding-top: 40px
+    .slick-dots
+        margin-top: 10px
+        
+.destination-left-content
+    +res-ab(xl)
+        margin-top: 65px
+        
+.destinations-nav
+    padding: 5px
+    flex-wrap: wrap
+    border-radius: 30px
+    display: inline-flex
+    justify-content: center
+    border: 1px solid $border-color
+    li
+        cursor: pointer
+        font-size: 20px
+        transition: 0.5s
+        font-weight: 500
+        padding: 10px 25px
+        border-radius: 30px
+        +res-bl(lg)
+            font-size: 18px
+        +res-bl(md)
+            font-size: 16px
+            padding: 5px 15px
+        &.active
+            color: white
+            background: $primary-color
+    &.style-two li
+        font-size: 16px
+        padding: 1px 15px
+        &.active
+            background: $secondary-color
+            
+.text-white .destinations-nav
+    border-color: rgba(255, 255, 255, 0.1)
+    li:not(.active)
+        color: #92A498
+            
+/* Destination Details */
+.gallery-more-btn
+    +poRB(27%, 60px)
+
+.destination-details-content
+    .section-title
+        .h2
+            +res-bl(xl)
+                font-size: 35px
+            +res-bl(lg)
+                font-size: 30px
+            +res-bl(sm)
+                font-size: 25px
+            +res-bl(xs)
+                font-size: 20px
+        h2
+            +res-ab(xl)
+                font-size: 65px
+                
+                
+/* Tour Grid */
+.tour-grid-wrap
+    .tour-grid.destination-item
+        .content
+            padding-top: 10px
+            position: relative
+            padding-bottom: 15px
+            .ratting
+                +poRT(20px, -46px)
+            .blog-meta
+                justify-content: space-between
+                li:not(:last-child)
+                    margin-right: 10px
+            .destination-footer
+                margin-top: 25px
+                padding-top: 25px
+                border-top: 1px solid $border-color
+                .theme-btn.style-three
+                    +size(35px)
+                    padding: 0
+                    line-height: 35px
+                    i
+                        margin-left: 0
+
+/* Tour Details */
+.tour-header-content
+    .ratting i
+        +res-ab(sm)
+            font-size: 18px
+
+.tour-header-social
+    a
+        margin-bottom: 10px
+        border-radius: 20px
+        display: inline-flex
+        align-items: center
+        padding: 5px 20px 5px 5px
+        border: 1px solid $border-color
+        &:not(:last-child)
+            margin-right: 20px
+            +res-bl(xs)
+                margin-right: 10px
+        i
+            flex: none
+            color: white
+            font-size: 12px
+            margin-right: 10px
+            +circle($primary-color, 30px)
+            &.bgc-secondary
+                background: $secondary-color
+        
+.tour-details-content
+    h3
+        margin-bottom: 20px
+                
+.tour-include-exclude
+    border-radius: 10px
+    padding: 35px 50px 28px
+    border: 1px solid $border-color
+    +res-bl(xl)
+        padding-left: 25px
+        padding-right: 20px
+    .check li i
+        color: $primary-color
+        
+.tour-map
+    iframe
+        height: 500px
+        border-radius: 10px
+        +res-bl(md)
+            height: 400px
+        +res-bl(sm)
+            height: 300px
+        
+.clients-reviews
+    padding: 50px
+    border-radius: 10px
+    +res-ab(md)
+        display: flex
+        align-items: center
+    +res-bl(ms)
+        +gapLR(padding, 30px)
+    +res-bl(xs)
+        +gapLR(padding, 20px)
+    .left
+        padding: 60px
+        margin-right: 8%
+        border-radius: 10px
+        +flexcenter(center)
+        flex-direction: column
+        background: rgba(255, 255, 255, 0.05)
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        +res-bl(xl)
+            +gapLR(padding, 30px)
+        +res-bl(md)
+            margin-right: 0
+            margin-bottom: 30px
+        b
+            color: white
+            line-height: 1
+            font-size: 70px
+            margin-top: -5px
+        span
+            color: white
+            margin-top: 5px
+            margin-bottom: 10px
+        .ratting
+            margin-bottom: 5px
+            i
+                font-size: 16px
+    .right
+        width: 100%
+
+.ratting-item
+    display: flex
+    align-items: center
+    &:not(:last-child)
+        margin-bottom: 10px
+    .title
+        color: white
+        font-size: 18px
+        min-width: 68px
+        font-weight: 500
+        +res-bl(xs)
+            font-size: 16px
+            min-width: 59px
+    .line
+        +size(100%, 5px)
+        +gapLR(margin, 22px)
+        background: rgba(255, 255, 255, 0.2)
+        +res-bl(ms)
+            +gapLR(margin, 10px)
+        span
+            height: 100%
+            display: block
+            background: $secondary-color
+    .ratting
+        min-width: 97px
+        +res-bl(xs)
+            min-width: 75px
+        i
+            font-size: 12px
+            +res-bl(xs)
+                font-size: 8px

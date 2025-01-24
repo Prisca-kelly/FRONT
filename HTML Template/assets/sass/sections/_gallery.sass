@@ -1,0 +1,93 @@
+/*******************************************************/
+/****************** ## Gallery Area ******************/
+/*******************************************************/
+.gallery-item
+    margin-bottom: 10px
+    img
+        width: 100%
+    
+.destination-map
+    iframe
+        height: 500px
+        border-radius: 10px
+        margin-bottom: -10px
+        
+.gallery-two-item
+    margin-bottom: 40px
+    .image
+        overflow: hidden
+        position: relative
+        margin-bottom: 20px
+        border-radius: 10px
+        &:after
+            +poLT(0)
+            opacity: 0
+            content: ''
+            +size(100%, 0)
+            transition: 0.5s
+            background: $heading-color
+        img
+            width: 100%
+        .link
+            z-index: 2
+            top: -70px
+            opacity: 0
+            color: white
+            font-size: 22px
+            position: absolute
+            left: calc(50% - 32.5px)
+            transform: rotate(-45deg)
+            +circle($secondary-color, 65px)
+    .content h5
+        +res-bl(md)
+            font-size: 22px
+    &:hover
+        .image
+            &:after
+                height: 100%
+                opacity: 0.5
+            .link
+                opacity: 1
+                top: calc(50% - 32.5px)
+            
+.gallery-slider-active
+    +gapLR(margin, -5px)
+    .gallery-three-item
+        +gapLR(margin, 5px)
+    .slick-dots
+        margin-top: 45px
+        
+.gallery-three-item
+    margin-bottom: 10px
+    .image
+        img
+            width: 100%
+    .content
+        opacity: 0
+        transition: 0.5s
+        +poLB(30px, 60px)
+        background: white
+        padding: 13px 30px
+        border-radius: 10px
+        +res-bl(lg)
+            left: 10px
+        +res-bl(md)
+            +gapLR(padding, 15px)
+        .category
+            +res-bl(ms)
+                font-size: 14px
+        h5
+            margin-bottom: 0
+            line-height: 1.3
+            +res-bl(lg)
+                font-size: 20px
+            +res-bl(ms)
+                font-size: 16px
+            +res-bl(xs)
+                font-size: 14px
+    &:hover
+        .content
+            opacity: 1
+            bottom: 30px
+            +res-bl(lg)
+                bottom: 10px

@@ -1,0 +1,120 @@
+/*******************************************************/
+/******************** ## FAQs Area ********************/
+/*******************************************************/
+.accordion-item
+    border-radius: 10px
+    margin-bottom: 15px
+    background: $lighter-color
+    border: 1px solid $border-color
+    &:first-of-type
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        .accordion-button
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+    &:last-of-type
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        .accordion-button
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+    &:not(:last-child)
+        margin-bottom: 10px
+    &:not(:first-of-type)
+        border-top: 1px solid $border-color
+    .accordion-button
+        border: none
+        font-size: 20px
+        box-shadow: none
+        font-weight: 500
+        align-items: center
+        color: $heading-color
+        background: transparent
+        padding: 12px 10px 10px 30px
+        +res-bl(ms)
+            font-size: 16px
+            padding: 8px 10px 8px 20px
+        &:after
+            flex: none
+            font-size: 15px
+            font-weight: 300
+            margin-top: -2px
+            content: "\f068"
+            text-align: center
+            +circle(white, 40px)
+            transform: rotate(0deg)
+            border: 1px solid $border-color
+            font-family: "Font Awesome 5 Pro"
+            +res-bl(xs)
+                +size(30px)
+                font-size: 13px
+                line-height: 30px
+        &.collapsed
+            &:after
+                content: "\f067"
+                transform: rotate(-90deg)
+            
+.accordion-body
+    padding: 0 30px 8px
+    +res-bl(ms)
+        font-size: 15px
+        +gapLR(padding, 20px)
+    .list-style-two
+        display: flex
+        flex-wrap: wrap
+        li
+            font-size: 16px
+            font-weight: 400
+            margin-right: 70px
+            +res-bl(xl)
+                margin-right: 30px
+            &:before
+                +size(20px)
+                font-size: 10px
+                margin-top: 2px
+                line-height: 20px
+                background: $primary-color
+        
+.accordion-two
+    position: relative
+    padding-left: 50px
+    &:before
+        content: ''
+        +poLT(15px, 30px)
+        background: $border-color
+        +size(1px, calc(100% - 50px))
+    .accordion-item
+        border: none
+        border-radius: 0
+        position: relative
+        margin-bottom: 35px
+        background: transparent
+        &:before
+            color: white
+            font-size: 14px
+            content: "\f00c"
+            +poLT(-50px, 5px)
+            +circle($primary-color, 30px)
+            font-family: "Font Awesome 5 Pro"
+        .accordion-button
+            padding: 0 0 15px
+            background: transparent
+            border-bottom: 1px solid $border-color
+            &:after
+                +size(auto)
+                border: none
+                font-size: 20px
+                font-weight: 400
+                content: "\f35a"
+                background: transparent
+                color: $secondary-color
+                transform: rotate(90deg)
+            &.collapsed
+                &:after
+                    content: "\f35a"
+                    color: $heading-color
+                    transform: rotate(0deg)
+        .accordion-body
+            padding: 20px 0 0
+            p:last-child
+                margin-bottom: 0

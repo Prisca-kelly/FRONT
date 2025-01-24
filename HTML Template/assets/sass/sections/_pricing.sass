@@ -1,0 +1,64 @@
+/*******************************************************/
+/******************* ## Pricing Area *******************/
+/*******************************************************/
+.pricing-plan-item
+    position: relative
+    margin-bottom: 30px
+    border-radius: 10px
+    padding: 30px 10px 40px
+    background: $lighter-color
+    border: 1px solid $border-color
+    .images
+        display: flex
+        margin-top: 30px
+        margin-right: -5px
+        margin-bottom: 30px
+        img
+            margin-right: 5px
+            border-radius: 7px
+            &.one
+                width: calc(25% - 5px)
+            &.two
+                width: calc(50% - 5px)
+            &.three
+                width: calc(75% - 5px)
+    .content
+        +gapLR(padding, 40px)
+        +res-bt(md, lg)
+            +gapLR(padding, 25px)
+        +res-bl(ms)
+            +gapLR(padding, 20px)
+        .price
+            display: block
+            margin-bottom: 5px
+            span
+                @extend %h2
+        h6
+            margin-bottom: 24px
+            +res-ab(ms)
+                font-size: 22px
+            +res-bl(xs)
+                font-size: 18px
+        .theme-btn.style-three
+            margin-top: 15px
+            width: 100%
+    .badge
+        +poRT(10px)
+        font-size: 14px
+        font-weight: 400
+        padding: 7px 10px
+        border-radius: 7px
+        text-transform: uppercase
+        background: $primary-color
+    &.bgc-black
+        border-color: $heading-color
+        background-color: $heading-color
+        .list-style-four li:before
+            color: $secondary-color
+        .theme-btn.style-three
+            color: white
+            background: $primary-color
+            border-color: $primary-color
+    &.text-white
+        .price span
+            color: white

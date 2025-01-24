@@ -1,0 +1,97 @@
+/*******************************************************/
+/******************* ## Main Footer *******************/
+/*******************************************************/
+.main-footer
+    color: #B6CABC
+    a
+        color: #B6CABC
+        &:hover
+            color: white
+            text-decoration: underline
+
+.footer-widget
+    margin-bottom: 50px
+                
+.footer-title
+    margin-bottom: 24px
+    h5
+        color: white
+        font-size: 22px
+        text-transform: capitalize
+        
+.footer-contact
+    .list-style-one
+        li
+            margin-bottom: 0
+            align-items: start
+            i
+                font-size: 16px
+                margin-top: 7px
+            &:not(:last-child)
+                margin-bottom: 15px
+            
+.footer-map iframe
+    height: 125px
+    border-radius: 6px
+            
+.footer-top
+    position: relative
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    +res-ab(lg)
+        &:before
+            content: ''
+            +poLT(50%, 0)
+            +size(1px, 100%)
+            background: rgba(255, 255, 255, 0.1)
+    .section-title h2
+        color: white
+            
+.newsletter-form
+    padding: 10px
+    display: flex
+    background: #fff
+    position: relative
+    border-radius: 35px
+    input
+        border: 0
+        padding: 11px 5px 11px 30px
+        +res-bl(xs)
+            padding-left: 22px
+    .theme-btn
+        flex: none
+        i
+            +res-bl(ms)
+                display: none
+            
+/* Widget Area */
+.widget-area
+    .col-md-6
+        +res-ab(xl)
+            width: 20%
+            
+/* Footer Two */
+.footer-two
+    .widget-area .col-md-6
+        +res-bt(xl, xxl)
+            width: 40%
+
+/* Footer Bottom */  
+.footer-bottom
+    position: relative
+    background: #222924
+    .copyright-text
+        a
+            color: $secondary-color
+    .scroll-top
+        top: -30px
+        position: absolute
+        left: calc(50% - 28px)
+        
+.footer-bottom-nav
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -13px)
+    justify-content: center
+    li
+        margin: 0 13px 5px
+            
