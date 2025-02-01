@@ -5,8 +5,12 @@
 
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
-                    <div class="logo"><a href="index.html"><img src="assets/images/logos/logo-two.png" alt="Logo"
-                                title="Logo"></a></div>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logos/logo-two.png" alt="Logo" title="Logo">
+                            <!-- <img src="assets/images/logo.png" alt="Logo" title="Logo"> -->
+                        </a>
+                    </div>
                 </div>
 
                 <div class="nav-outer mx-lg-auto ps-xxl-5 clearfix">
@@ -46,7 +50,7 @@
 
                 <!-- Menu Button -->
                 <div class="menu-btns py-10">
-                    <a href="contact.html" class="theme-btn style-two bgc-secondary">
+                    <a href="espacecli.html" class="theme-btn style-two bgc-secondary">
                         <i class="fas fa-user"></i>
                     </a>
                 </div>
