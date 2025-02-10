@@ -412,15 +412,12 @@
             </div>
         </section>
         <!-- Hotel Area end -->
-
         <!-- Footer -->
         <?php include 'include/common/footer.php'; ?>
         <!-- Footer -->
 
     </div>
     <!--End pagewrapper-->
-
-
     <?php include 'include/common/script.php'; ?>
 
 </body>
