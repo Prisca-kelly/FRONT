@@ -21,7 +21,7 @@
         <!--End Hidden Sidebar -->
 
 
-        <!-- Hero Area Start -->
+        <!-- Bannière Start -->
         <section class="hero-area bgc-black pt-200 rpt-120 rel z-2">
             <div class="container-fluid">
                 <h1 class="hero-title" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1500"
@@ -31,104 +31,9 @@
                 </div>
             </div>
         </section>
-        <!-- Hero Area End -->
+        <!-- Bannière End -->
 
-
-        <!-- Destinations Area start -->
-        <section class="destinations-area bgc-black pt-100 pb-70 rel z-1">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-offset="50">
-                            <h2>Découvrir les trésors du monde avec AS Finanial</h2>
-                            <p>Plusieurs expériences dont vous vous souviendrez</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/test.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, France</span>
-                                <h5><a href="destination-details.html">Bienvenue</a></h5>
-                                <span class="time">3 jour 2 nuit - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>400 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/po.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, Italy</span>
-                                <h5><a href="destination-details.html">Bienvenue</a></h5>
-                                <span class="time">3 jour 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>50 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/paris.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                <h5><a href="destination-details.html">Bienvenue</a></h5>
-                                <span class="time">3 jours 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>80 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/OIP.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                <h5><a href="destination-details.html">Meilleur endroit pour vos séjours</a></h5>
-                                <span class="time">3 jours 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>100 000</span>/par person</span>
-                                <a href="#" class="read-more">Book Now <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Destinations Area end -->
-
-
-        <!-- About Us Area start -->
+        <!-- A propos start -->
         <section class="about-us-area py-100 rpb-90 rel z-1">
             <div class="container">
                 <div class="row align-items-center">
@@ -180,10 +85,102 @@
                 </div>
             </div>
         </section>
-        <!-- About Us Area end -->
+        <!-- A propos end -->
 
+        <!-- Hôtes start -->
+        <section class="destinations-area bgc-black pt-100 pb-70 rel z-1">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-offset="50">
+                            <h2>Découvrir les trésors du monde avec AS Finanial</h2>
+                            <p>Plusieurs expériences dont vous vous souviendrez</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="destination-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                            <div class="image">
+                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
+                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
+                                <img src="assets/images/destinations/test.jpg" alt="Destination">
+                            </div>
+                            <div class="content">
+                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, France</span>
+                                <h5><a href="destination-details.html">Ibuscus</a></h5>
+                                <span class="time">3 jour 2 nuit - Couple</span>
+                            </div>
+                            <div class="destination-footer">
+                                <span class="price"><span>400 000</span>/par personne</span>
+                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="destination-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
+                            data-aos-offset="50">
+                            <div class="image">
+                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
+                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
+                                <img src="assets/images/destinations/po.jpg" alt="Destination">
+                            </div>
+                            <div class="content">
+                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, Italy</span>
+                                <h5><a href="destination-details.html">Redisson</a></h5>
+                                <span class="time">3 jour 2 nuits - Couple</span>
+                            </div>
+                            <div class="destination-footer">
+                                <span class="price"><span>50 000</span>/par personne</span>
+                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="destination-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                            data-aos-offset="50">
+                            <div class="image">
+                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
+                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
+                                <img src="assets/images/destinations/paris.jpg" alt="Destination">
+                            </div>
+                            <div class="content">
+                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
+                                <h5><a href="destination-details.html">Juleviers</a></h5>
+                                <span class="time">3 jours 2 nuits - Couple</span>
+                            </div>
+                            <div class="destination-footer">
+                                <span class="price"><span>80 000</span>/par personne</span>
+                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="destination-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
+                            data-aos-offset="50">
+                            <div class="image">
+                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
+                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
+                                <img src="assets/images/destinations/OIP.jpg" alt="Destination">
+                            </div>
+                            <div class="content">
+                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
+                                <h5><a href="destination-details.html">Meilleur endroit pour vos séjours</a></h5>
+                                <span class="time">3 jours 2 nuits - Couple</span>
+                            </div>
+                            <div class="destination-footer">
+                                <span class="price"><span>100 000</span>/par person</span>
+                                <a href="#" class="read-more">Book Now <i class="fal fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hôtes end -->
 
-        <!-- Popular Destinations Area start -->
+        <!-- Destinations start -->
         <section class="popular-destinations-area rel z-1">
             <div class="container-fluid">
                 <div class="popular-destinations-wrap br-20 bgc-lighter pt-100 pb-70">
@@ -286,132 +283,107 @@
                 </div>
             </div>
         </section>
-        <!-- Popular Destinations Area end -->
+        <!-- Destinations end -->
 
-        <!-- Hotel Area start -->
-        <section class="hotel-area bgc-black py-100 rel z-1">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
+        <!-- Services start -->
+        <section class="tour-grid-page py-100 rel z-2">
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up"
+                        <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
-                            <h2>Decouvrez le meilleur hotel de classe au monde</h2>
-                            <p>One site <span class="count-text plus" data-speed="3000" data-stop="34500">0</span> most
-                                popular experience you’ll remember</p>
+                            <h2>Nos services</h2>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xxl-6 col-xl-8 col-lg-10">
-                        <div class="destination-item style-three" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/hot1.jpg" alt="Hotel">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Chine</span>
-                                <h5><a href="destination-details.html">Belle vue</a></h5>
-                                <ul class="list-style-one">
-                                    <li><i class="fal fa-bed-alt"></i> 2 Chambres</li>
-                                    <li><i class="fal fa-hat-chef"></i> 1 Chaise</li>
-                                    <li><i class="fal fa-bath"></i> 2 salle de bain</li>
-                                    <li><i class="fal fa-router"></i> Internet</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <span class="price"><span>400 000</span>/par nuit</span>
-                                    <a href="#" class="read-more">Reservez maintenant <i
-                                            class="fal fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-8 col-lg-10">
-                        <div class="destination-item style-three" data-aos="fade-up" data-aos-delay="50"
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/hot2.jpg" alt="Hotel">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
                             </div>
                             <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Kigali, Rwanda</span>
-                                <h5><a href="destination-details.html">Villa avec Piscine</a></h5>
-                                <ul class="list-style-one">
-                                    <li><i class="fal fa-bed-alt"></i> 2 Chambres</li>
-                                    <li><i class="fal fa-hat-chef"></i> 1 Chaise</li>
-                                    <li><i class="fal fa-bath"></i> 2 salle de bain</li>
-                                    <li><i class="fal fa-router"></i> Internet</li>
-                                </ul>
+                                <h5>
+                                    <a href="tour-details.html">VISA</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
                                 <div class="destination-footer">
-                                    <span class="price"><span>400 000</span>/par nuit</span>
-                                    <a href="#" class="read-more">Reservez maintenant <i
-                                            class="fal fa-angle-right"></i></a>
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-8 col-lg-10">
-                        <div class="destination-item style-three" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Ao Nang, Thailand</span>
-                                <h5><a href="#">Maison entouré d arbres</a></h5>
-                                <ul class="list-style-one">
-                                    <li><i class="fal fa-bed-alt"></i> 2 Chambres</li>
-                                    <li><i class="fal fa-hat-chef"></i> 1 Chaise</li>
-                                    <li><i class="fal fa-bath"></i> 2 salle de bain</li>
-                                    <li><i class="fal fa-router"></i> Internet</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <span class="price"><span>400 000</span>/par nuit</span>
-                                    <a href="#" class="read-more">Reservez maintenant <i
-                                            class="fal fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/hot3.jpeg" alt="Hotel">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-8 col-lg-10">
-                        <div class="destination-item style-three" data-aos="fade-up" data-aos-delay="50"
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Ao Nang, Thailand</span>
-                                <h5><a href="#">Conjoint piscine et une jungle</a></h5>
-                                <ul class="list-style-one">
-                                    <li><i class="fal fa-bed-alt"></i> 2 Chambres</li>
-                                    <li><i class="fal fa-hat-chef"></i> 1 Chaise</li>
-                                    <li><i class="fal fa-bath"></i> 2 salle de bain</li>
-                                    <li><i class="fal fa-router"></i> Internet</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <span class="price"><span>400 000</span>/par nuit</span>
-                                    <a href="#" class="read-more">Reservez maintenant <i
-                                            class="fal fa-angle-right"></i></a>
-                                </div>
-                            </div>
                             <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/hot4.jpeg" alt="Hotel">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                            </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="tour-details.html">Hotels</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
+                                <div class="destination-footer">
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hotel-more-btn text-center mt-40">
-                    <a href="destination2.html" class="theme-btn style-four">
-                        <span data-hover="Explore More Hotel">Decouvrir plus d hotel</span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-offset="50">
+                            <div class="image">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                            </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="tour-details.html">Destination</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
+                                <div class="destination-footer">
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-offset="50">
+                            <div class="image">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                            </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="tour-details.html">Tourisme</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
+                                <div class="destination-footer">
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Hotel Area end -->
+        <!-- Services end -->
+
         <!-- Footer -->
         <?php include 'include/common/footer.php'; ?>
         <!-- Footer -->

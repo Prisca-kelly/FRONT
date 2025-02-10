@@ -30,8 +30,6 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <span class="badge bgc-pink">Featured</span>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
                                 <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
                             </div>
                             <div class="content">
@@ -41,81 +39,9 @@
                                 <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
                                 </p>
                                 <div class="destination-footer">
-                                    <span class="price"><span>$58.00</span>/person</span>
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
-                                        <span data-hover="Book Now">Book Now</span>
-                                        <i class="fal fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-delay="50" data-aos-offset="50">
-                            <div class="image">
-                                <span class="badge">10% Off</span>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/tour-list2.jpg" alt="Tour List">
-                            </div>
-                            <div class="content">
-                                <div class="destination-header">
-                                    <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                    <div class="ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h5><a href="tour-details.html">Buenos Aires, Calafate & Ushuaia, Rome, Italy</a></h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
-                                </p>
-                                <ul class="blog-meta">
-                                    <li><i class="far fa-clock"></i> 3 days 2 nights</li>
-                                    <li><i class="far fa-user"></i> 5-8 guest</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <span class="price"><span>$58.00</span>/person</span>
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
-                                        <span data-hover="Book Now">Book Now</span>
-                                        <i class="fal fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-delay="100" data-aos-offset="50">
-                            <div class="image">
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/tour-list3.jpg" alt="Tour List">
-                            </div>
-                            <div class="content">
-                                <div class="destination-header">
-                                    <span class="location"><i class="fal fa-map-marker-alt"></i> Bali, Indonesia</span>
-                                    <div class="ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h5><a href="tour-details.html">Bay Cruise lake trip by Boat in Bali, Indonesia</a></h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
-                                </p>
-                                <ul class="blog-meta">
-                                    <li><i class="far fa-clock"></i> 3 days 2 nights</li>
-                                    <li><i class="far fa-user"></i> 5-8 guest</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <span class="price"><span>$58.00</span>/person</span>
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
-                                        <span data-hover="Book Now">Book Now</span>
-                                        <i class="fal fa-arrow-right"></i>
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -125,32 +51,60 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/tour-list4.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
                             </div>
                             <div class="content">
-                                <div class="destination-header">
-                                    <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                    <div class="ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h5><a href="tour-details.html">Buenos Aires, Calafate & Ushuaia, Rome, Italy</a></h5>
+                                <h5>
+                                    <a href="tour-details.html">Hotels</a>
+                                </h5>
                                 <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
                                 </p>
-                                <ul class="blog-meta">
-                                    <li><i class="far fa-clock"></i> 3 days 2 nights</li>
-                                    <li><i class="far fa-user"></i> 5-8 guest</li>
-                                </ul>
                                 <div class="destination-footer">
-                                    <span class="price"><span>$58.00</span>/person</span>
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
-                                        <span data-hover="Book Now">Book Now</span>
-                                        <i class="fal fa-arrow-right"></i>
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-offset="50">
+                            <div class="image">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                            </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="tour-details.html">Destination</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
+                                <div class="destination-footer">
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-offset="50">
+                            <div class="image">
+                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                            </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="tour-details.html">Tourisme</a>
+                                </h5>
+                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                </p>
+                                <div class="destination-footer">
+                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus</span>
+                                        &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
