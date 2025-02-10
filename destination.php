@@ -41,7 +41,7 @@
                                 <img src="assets/images/destinations/singa.jpeg" alt="Destination">
                             </div>
                             <div class="content">
-                                <h6><a href="destination-details.html">Singapour</a></h6>
+                                <h6><a href="destination-details.php">Singapour</a></h6>
                                 <span class="tours">258 visites</span>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 <img src="assets/images/destinations/maroc.jpeg" alt="Destination">
                             </div>
                             <div class="content">
-                                <h6><a href="destination-details.html">Maroc</a></h6>
+                                <h6><a href="destination-details.php">Maroc</a></h6>
                                 <span class="tours">258 visites</span>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                 <img src="assets/images/destinations/lbv.jpeg" alt="Destination">
                             </div>
                             <div class="content">
-                                <h6><a href="destination-details.html">Libreville</a></h6>
+                                <h6><a href="destination-details.php">Libreville</a></h6>
                                 <span class="tours">258 visistes</span>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                                 <img src="assets/images/destinations/SEN.jpg" alt="Destination">
                             </div>
                             <div class="content">
-                                <h6><a href="destination-details.html">Sénégal</a></h6>
+                                <h6><a href="destination-details.php">Sénégal</a></h6>
                                 <span class="tours">258 visistes</span>
                             </div>
                         </div>

@@ -413,50 +413,6 @@
         </section>
         <!-- Hotel Area end -->
 
-
-        <!-- CTA Area start -->
-        <section class="cta-area pt-100 rel z-1">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-duration="1500"
-                        data-aos-offset="50">
-                        <div class="cta-item" style="background-image: url(assets/images/cta/télécharger\ \(3\).jpeg);">
-                            <span class="category">Tente de camping</span>
-                            <h2>Decouvrir le meilleur tourisme au monde</h2>
-                            <a href="tour-details.html" class="theme-btn style-two bgc-secondary">
-                                <span data-hover="Explore Tours">Explorez les visites</span>
-                                <i class="fal fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1500"
-                        data-aos-offset="50">
-                        <div class="cta-item" style="background-image: url(assets/images/cta/télécharger\ \(2\).jpeg);">
-                            <span class="category">Plage de mer</span>
-                            <h2>Explorez la plus grande mer au monde</h2>
-                            <a href="tour-details.html" class="theme-btn style-two">
-                                <span data-hover="Explore Tours">Explorez les visites</span>
-                                <i class="fal fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1500"
-                        data-aos-offset="50">
-                        <div class="cta-item" style="background-image: url(assets/images/cta/télécharger.jpeg);">
-                            <span class="category">L eau tombe</span>
-                            <h2>Les plus grandes chutes</h2>
-                            <a href="tour-details.html" class="theme-btn style-two bgc-secondary">
-                                <span data-hover="Explore Tours">Explorez les visites</span>
-                                <i class="fal fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- CTA Area end -->
-
-
         <!-- Footer -->
         <?php include 'include/common/footer.php'; ?>
         <!-- Footer -->
