@@ -23,26 +23,10 @@
         <div class="form-back-drop"></div>
 
         <!-- Page Banner Start -->
-        <section class="page-banner-area pt-50 pb-35 rel z-1 bgs-cover"
-            style="background-image: url(assets/images/banner/banner.jpg);">
-            <div class="container">
-                <div class="banner-inner text-white">
-                    <h2 class="page-title mb-10" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">À
-                        propos
-                    </h2>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center mb-20" data-aos="fade-right" data-aos-delay="200"
-                            data-aos-duration="1500" data-aos-offset="50">
-                            <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
-                            <li class="breadcrumb-item active">À propos</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </section>
-        <!-- Page Banner End -->
 
-
+        
+        
+        
         <!-- About Area start -->
         <section class="about-area-two py-100 rel z-1">
             <div class="container">
@@ -56,17 +40,14 @@
                             <div class="row">
                                 <div class="col-lg-8 pe-lg-5 me-lg-5">
                                     <div class="section-title mb-25">
-                                        <h2>AS FINANCIAL</h2>
+                                        <h2>A-S FINANCIAL</h2>
                                     </div>
                                 </div>
 
                                 <div class="col-md-8">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti eius
-                                        officia
-                                        rerum natus tempora neque saepe optio alias ipsum explicabo fuga perferendis
-                                        mollitia, eaque itaque! Qui magni doloribus aperiam.</p>
+                                    <p>A-S Financial est une agence de voyage qui aide ses clients à planifier des voyages en toute sérénité.</p>
                                     <ul class="list-style-two mt-35">
-                                        <li>Experience Agency</li>
+                                        <li>Agence d'expérience</li>
                                         <li>Équipe profesionnelle</li>
                                         <li>Ouvert Lundi à Vendredi</li>
                                         <li>De 08h à 17h</li>
@@ -127,14 +108,12 @@
                             <div class="row pt-25">
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        <span class="count-text k-plus" data-speed="3000" data-stop="3">0</span>
-                                        <span class="counter-title">Destinations</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        <span class="count-text m-plus" data-speed="3000" data-stop="9">0</span>
-                                        <span class="counter-title">Clients satisfaits</span>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -160,23 +139,19 @@
                     </div>
                     <div class="client-logo-active">
                         <div class="client-logo-item" data-aos="flip-up" data-aos-duration="1500" data-aos-offset="50">
-                            <a href="#"><img src="assets/images/client-logos/client-logo1.png" alt="Client Logo"></a>
+                            <a href="#"><img src="assets/images/client-logos/t00.jpeg" alt="Client Logo"></a>
                         </div>
                         <div class="client-logo-item" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1500"
                             data-aos-offset="50">
-                            <a href="#"><img src="assets/images/client-logos/client-logo2.png" alt="Client Logo"></a>
+                            <a href="#"><img src="assets/images/client-logos/hh.jpeg" alt="Client Logo"></a>
                         </div>
                         <div class="client-logo-item" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1500"
                             data-aos-offset="50">
-                            <a href="#"><img src="assets/images/client-logos/client-logo3.png" alt="Client Logo"></a>
+                            <a href="#"><img src="assets/images/client-logos/ph00.jpeg" alt="Client Logo"></a>
                         </div>
                         <div class="client-logo-item" data-aos="flip-up" data-aos-delay="150" data-aos-duration="1500"
                             data-aos-offset="50">
-                            <a href="#"><img src="assets/images/client-logos/client-logo4.png" alt="Client Logo"></a>
-                        </div>
-                        <div class="client-logo-item" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <a href="#"><img src="assets/images/client-logos/client-logo5.png" alt="Client Logo"></a>
+                            <a href="#"><img src="assets/images/client-logos/ig9.jpeg" alt="Client Logo"></a>
                         </div>
                     </div>
                 </div>

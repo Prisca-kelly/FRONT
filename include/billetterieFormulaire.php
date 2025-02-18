@@ -74,13 +74,13 @@
                 <div class="contact-images-part" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
                     <div class="row">
                         <div class="col-12">
-                            <img src="assets/images/contact/contact1.jpg" alt="Contact">
+                            <img src="assets/images/contact/R.jpg" alt="Contact">
                         </div>
                         <div class="col-6">
-                            <img src="assets/images/contact/contact2.jpg" alt="Contact">
+                            <img src="assets/images/contact/RE.jpg" alt="Contact">
                         </div>
                         <div class="col-6">
-                            <img src="assets/images/contact/contact3.jpg" alt="Contact">
+                            <img src="assets/images/contact/U.jpg" alt="Contact">
                         </div>
                     </div>
                     <div class="circle-logo">
