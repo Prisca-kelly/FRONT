@@ -30,11 +30,11 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/R.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">VISA</a>
+                                    <a href="tour-details.html">Assistance Visa</a>
                                 </h5>
                                 <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
                                 </p>
@@ -51,7 +51,7 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/OIP0.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
@@ -72,7 +72,7 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/OIP1.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
@@ -93,7 +93,7 @@
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/R00.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>

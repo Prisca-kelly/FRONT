@@ -22,18 +22,7 @@
     <div class="form-back-drop"></div>
 
     <!-- Page Banner Start -->
-    <section class="page-banner-area pt-50 pb-35 rel z-1 bgs-cover"
-      style="background-image: url(assets/images/banner/photo2.jpeg)">
-      <div class="container">
-        <div class="banner-inner text-white">
-          <h2 class="page-title mb-10" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
-            Billetterie
-          </h2>
-        </div>
-      </div>
-    </section>
-    <!-- Page Banner End -->
-
+    
     <!-- Formulaire -->
     <?php include 'include/billetterieFormulaire.php'; ?>
     <!-- Formulaire -->
