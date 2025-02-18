@@ -11866,3 +11866,16 @@ blockquote .blockquote-footer:before {
 .text-normal {
   text-transform: inherit !important;
 }
+
+.bg-light-opacity {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.btn-blue {
+  background-color: #065465;
+}
+a.as-color, .as-color{
+color: #065465;
+}

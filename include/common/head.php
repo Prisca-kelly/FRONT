@@ -13,4 +13,5 @@
 <link rel="stylesheet" href="assets/css/nice-select.min.css">
 <link rel="stylesheet" href="assets/css/aos.css">
 <link rel="stylesheet" href="assets/css/slick.min.css">
+<link href="assets/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="assets/css/style.css">
