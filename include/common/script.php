@@ -18,5 +18,8 @@
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <!--  AOS Animation -->
 <script src="assets/js/aos.js"></script>
+<!-- SweetAlert2 -->
+<script src="assets/js/sweetalert2.all.min.js"></script>
 <!-- Custom script -->
 <script src="assets/js/script.js"></script>
+<script src="assets/js/custom.js"></script>

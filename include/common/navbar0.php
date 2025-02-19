@@ -7,7 +7,7 @@
                 <div class="logo-outer">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/logos/logo-two.png" alt="Logo" title="Logo">
+                            <img src="assets/images/logos/as-logo-2.png" alt="Logo" title="Logo">
                             <!-- <img src="assets/images/logo.png" alt="Logo" title="Logo"> -->
                         </a>
                     </div>
@@ -19,7 +19,7 @@
                         <div class="navbar-header">
                             <div class="mobile-logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logos/logo-two.png" alt="Logo" title="Logo">
+                                    <img src="assets/images/logos/as-logo-2.png" alt="Logo" title="Logo">
                                 </a>
                             </div>
 
@@ -40,7 +40,7 @@
                                 <li><a href="destination.php">Destinations</a></li>
                                 <li><a href="services.php">Services</a></li>
                                 <li><a href="contact.php">Contact</a></li>
-                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog.php">Blog</a></li>
                             </ul>
                         </div>
 

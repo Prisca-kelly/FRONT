@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
     <title>Contact</title>
     <?php include 'include/common/head.php'; ?>
-
 </head>
 
 <body>
@@ -22,7 +21,7 @@
         <!--Form Back Drop-->
         <div class="form-back-drop"></div>
 
-        
+
 
 
         <!-- Infos -->
