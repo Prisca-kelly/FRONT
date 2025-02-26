@@ -61,35 +61,35 @@ $total = $sql->rowCount();
                             echo "<h5 class='text-center'>Aucun article n'est disponible pour le moment</h5>";
                         }
                         foreach ($blogs as $blog) { ?>
-                            <div class="blog-item style-three" data-aos="fade-up" data-aos-duration="1500"
-                                data-aos-offset="50">
-                                <div class="image">
-                                    <img src="assets/images/blog/blog-list1.jpg" alt="Blog List">
-                                </div>
-                                <div class="content">
-                                    <h5>
-                                        <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>">
-                                            <?php echo $blog['titre']; ?>
-                                        </a>
-                                    </h5>
-                                    <p>
-                                        <?php echo $blog['contenu']; ?>
-                                    </p>
-                                    <ul class="blog-meta text-end">
-                                        <li>
-                                            <i class="far fa-calendar-alt"></i> <a href="#">
-                                                <?php echo $blog['date_publication']; ?>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                    <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>"
-                                        class="theme-btn style-two style-three">
-                                        <span data-hover="Voir plus">Voir plus &nbsp;</span>
-                                        <i class="fal fa-arrow-right"></i>
-                                    </a>
-                                </div>
+                        <div class="blog-item style-three" data-aos="fade-up" data-aos-duration="1500"
+                            data-aos-offset="50">
+                            <div class="image">
+                                <img src="<?= FILE_PATH . $blog['image'] ?>" alt="Blog List">
                             </div>
+                            <div class="content">
+                                <h5>
+                                    <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>">
+                                        <?php echo $blog['titre']; ?>
+                                    </a>
+                                </h5>
+                                <p>
+                                    <?php echo $blog['contenu']; ?>
+                                </p>
+                                <ul class="blog-meta text-end">
+                                    <li>
+                                        <i class="far fa-calendar-alt"></i> <a href="#">
+                                            <?php echo $blog['date_publication']; ?>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>"
+                                    class="theme-btn style-two style-three">
+                                    <span data-hover="Voir plus">Voir plus &nbsp;</span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
                         <?php }
                         ?>
 

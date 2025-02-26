@@ -1,40 +1,44 @@
+<?php
+require('model/config/database.php'); // Inclure la connexion
+require('model/config/util.php'); // Fichier qui gère les sessions
+?>
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
 
-  <title>Billetterie</title>
-  <?php include 'include/common/head.php'; ?>
+    <title>Billetterie</title>
+    <?php include 'include/common/head.php'; ?>
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <!-- Preloader -->
-    <!-- <div class="preloader">
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <!-- <div class="preloader">
             <div class="custom-loader"></div>
         </div> -->
 
-    <!-- Navbar -->
-    <?php include 'include/common/navbar0.php'; ?>
-    <!-- Navbar -->
+        <!-- Navbar -->
+        <?php include 'include/common/navbar0.php'; ?>
+        <!-- Navbar -->
 
-    <!--Form Back Drop-->
-    <div class="form-back-drop"></div>
+        <!--Form Back Drop-->
+        <div class="form-back-drop"></div>
 
-    <!-- Page Banner Start -->
-    
-    <!-- Formulaire -->
-    <?php include 'include/billetterieFormulaire.php'; ?>
-    <!-- Formulaire -->
+        <!-- Page Banner Start -->
 
-    <!-- Footer -->
-    <?php include 'include/common/footer.php'; ?>
-    <!-- Footer -->
+        <!-- Formulaire -->
+        <?php include 'include/billetterieFormulaire.php'; ?>
+        <!-- Formulaire -->
 
-  </div>
+        <!-- Footer -->
+        <?php include 'include/common/footer.php'; ?>
+        <!-- Footer -->
 
-  <!-- Script -->
-  <?php include 'include/common/script.php'; ?>
+    </div>
+
+    <!-- Script -->
+    <?php include 'include/common/script.php'; ?>
 </body>
 
 </html>

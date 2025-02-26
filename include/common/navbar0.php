@@ -50,7 +50,11 @@
 
                 <!-- Menu Button -->
                 <div class="menu-btns py-10">
-                    <a href="espacecli.html" class="theme-btn style-two bgc-secondary">
+                    <a href="<?php if (isset($_SESSION['id']) && $_SESSION['id'] > 0) {
+                                    echo "client-accueil.php";
+                                } else {
+                                    echo "login.php";
+                                } ?>" class="theme-btn style-two bgc-secondary">
                         <i class="fas fa-user"></i>
                     </a>
                 </div>
