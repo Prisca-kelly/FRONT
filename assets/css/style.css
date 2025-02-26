@@ -11876,6 +11876,12 @@ blockquote .blockquote-footer:before {
 .btn-blue {
   background-color: #065465;
 }
-a.as-color, .as-color{
-color: #065465;
+a.as-color,
+.as-color {
+  color: #065465;
+}
+
+.radio-filter li a.active {
+  color: #065465;
+  font-weight: bold;
 }

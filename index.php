@@ -1,3 +1,7 @@
+<?php
+require('model/config/database.php'); // Inclure la connexion
+require('model/config/util.php'); // Fichier qui gère les sessions
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,10 +28,11 @@
         <!-- Bannière Start -->
         <section class="hero-area bgc-black pt-200 rpt-120 rel z-2">
             <div class="container-fluid">
-            <h1 class="hero-title mt-100" style="font-size: 100px; font-family: 'Arial', sans-serif; text-align: center;"
-    data-aos="flip-up" data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">Visite et Voyage</h1>
-            <div class="main-hero-image bgs-cover" style="background-image: url(assets/images/hero/so.jpg);">
-            </div>
+                <h1 class="hero-title mt-100"
+                    style="font-size: 100px; font-family: 'Arial', sans-serif; text-align: center;" data-aos="flip-up"
+                    data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">Visite et Voyage</h1>
+                <div class="main-hero-image bgs-cover" style="background-image: url(assets/images/hero/so.jpg);">
+                </div>
             </div>
         </section>
         <!-- Bannière End -->
@@ -87,202 +92,14 @@
         <!-- A propos end -->
 
         <!-- Hôtes start -->
-        <section class="destinations-area bgc-black pt-100 pb-70 rel z-1">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-offset="50">
-                            <h2>Découvrir les trésors du monde avec AS Finanial</h2>
-                            <p>Plusieurs expériences dont vous vous souviendrez</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/test.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, France</span>
-                                <h5><a href="destination-details.html">Ibuscus</a></h5>
-                                <span class="time">3 jour 2 nuit - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>400 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/po.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Visite, Italy</span>
-                                <h5><a href="destination-details.html">Redisson</a></h5>
-                                <span class="time">3 jour 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>50 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/paris.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                <h5><a href="destination-details.html">Juleviers</a></h5>
-                                <span class="time">3 jours 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>80 000</span>/par personne</span>
-                                <a href="#" class="read-more">Réservez maintenant <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-md-6">
-                        <div class="destination-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <div class="ratting"><i class="fas fa-star"></i> 4.8</div>
-                                <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="assets/images/destinations/OIP.jpg" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <span class="location"><i class="fal fa-map-marker-alt"></i> Rome, Italy</span>
-                                <h5><a href="destination-details.html">Meilleur endroit pour vos séjours</a></h5>
-                                <span class="time">3 jours 2 nuits - Couple</span>
-                            </div>
-                            <div class="destination-footer">
-                                <span class="price"><span>100 000</span>/par person</span>
-                                <a href="#" class="read-more">Book Now <i class="fal fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include 'include/accueil/hotel.php'; ?>
         <!-- Hôtes end -->
 
+
         <!-- Destinations start -->
-        <section class="popular-destinations-area rel z-1">
-            <div class="container-fluid">
-                <div class="popular-destinations-wrap br-20 bgc-lighter pt-100 pb-70">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up"
-                                data-aos-duration="1500" data-aos-offset="50">
-                                <h2>Decouvrir les destinations populaires</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-duration="1500"
-                                    data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/th (1).jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html">ROME</a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-delay="100"
-                                    data-aos-duration="1500" data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/télécharger (1).jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html">MAROC</a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-delay="200"
-                                    data-aos-duration="1500" data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/OIP (2).jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html">SENEGAL</a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-duration="1500"
-                                    data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/OIP (3).jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html">TOKYO</a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-delay="100"
-                                    data-aos-duration="1500" data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/télécharger.jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html">DUBAI</a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="destination-item style-two" data-aos="flip-up" data-aos-delay="200"
-                                    data-aos-duration="1500" data-aos-offset="50">
-                                    <div class="image">
-                                        <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                        <img src="assets/images/destinations/th (1).jpeg" alt="Destination">
-                                    </div>
-                                    <div class="content">
-                                        <h6><a href="destination-details.html"></a></h6>
-                                        <span class="time">5352+ tours & 856+ Activity</span>
-                                        <a href="#" class="more"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include 'include/accueil/destination.php'; ?>
         <!-- Destinations end -->
+
 
         <!-- Services start -->
         <section class="tour-grid-page py-100 rel z-2">

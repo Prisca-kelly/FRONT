@@ -1,3 +1,9 @@
+<?php
+require('model/config/database.php'); // Inclure la connexion
+require('model/config/util.php'); // Fichier qui gère les sessions
+
+$page = "profile";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -33,29 +39,24 @@
                                 <h6 class="widget-title">Espace client</h6>
                                 <ul class="radio-filter">
                                     <li>
-                                        <input class="form-check-input" type="radio" checked name="ByActivities"
-                                            id="activity1">
-                                        <label for="activity1">Sea Beach <span>18</span></label>
+                                        <a href="#" class="<?= $page == 'profile' ? 'active' : ''; ?>">
+                                            <i class="fas fa-user me-2"></i> Profil
+                                        </a>
                                     </li>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="ByActivities" id="activity2">
-                                        <label for="activity2">Car Parking <span>29</span></label>
+                                        <a href="#" class="<?= $page == 'historique' ? 'active' : ''; ?>">
+                                            <i class="fas fa-history me-2"></i> Historique des commandes
+                                        </a>
                                     </li>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="ByActivities" id="activity3">
-                                        <label for="activity3">Laundry Service <span>23</span></label>
+                                        <a href="#" class="<?= $page == 'notifications' ? 'active' : ''; ?>">
+                                            <i class="fas fa-bell me-2"></i> Notifications
+                                        </a>
                                     </li>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="ByActivities" id="activity4">
-                                        <label for="activity4">Outdoor Seating <span>25</span></label>
-                                    </li>
-                                    <li>
-                                        <input class="form-check-input" type="radio" name="ByActivities" id="activity5">
-                                        <label for="activity5">Reservations <span>26</span></label>
-                                    </li>
-                                    <li>
-                                        <input class="form-check-input" type="radio" name="ByActivities" id="activity6">
-                                        <label for="activity6">Smoking Allowed <span>28</span></label>
+                                        <a href="#" class="<?= $page == 'securite' ? 'active' : ''; ?>">
+                                            <i class="fas fa-shield-alt me-2"></i> Sécurité
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -99,7 +100,7 @@
 
 
     <!-- Jquery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src=" assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Appear Js -->

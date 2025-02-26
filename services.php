@@ -1,5 +1,10 @@
+<?php
+require('model/config/database.php'); // Inclure la connexion
+require('model/config/util.php'); // Fichier qui gère les sessions
+init_session()()
+?>
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
     <title>Destination</title>

@@ -1,3 +1,7 @@
+<?php
+require('model/config/database.php'); // Inclure la connexion
+require('model/config/util.php'); // Fichier qui gère les sessions
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,9 +28,9 @@
 
         <!-- Page Banner Start -->
 
-        
-        
-        
+
+
+
         <!-- About Area start -->
         <section class="about-area-two py-100 rel z-1">
             <div class="container">
@@ -45,7 +49,8 @@
                                 </div>
 
                                 <div class="col-md-8">
-                                    <p>A-S Financial est une agence de voyage qui aide ses clients à planifier des voyages en toute sérénité.</p>
+                                    <p>A-S Financial est une agence de voyage qui aide ses clients à planifier des
+                                        voyages en toute sérénité.</p>
                                     <ul class="list-style-two mt-35">
                                         <li>Agence d'expérience</li>
                                         <li>Équipe profesionnelle</li>
@@ -108,12 +113,12 @@
                             <div class="row pt-25">
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        
+
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        
+
                                     </div>
                                 </div>
                             </div>
