@@ -76,8 +76,8 @@ function generateRandomSerialNumber(int $val)
 	return implode("", $matri);
 }
 
-// define("FILE_PATH", "../Administrateur/uploads/");
-// define("SILMPLE_FILE_PATH", "../Administrateur/");
+define("FILE_PATH", "../Administrateur/uploads/");
+define("SILMPLE_FILE_PATH", "../Administrateur/");
 
-define("FILE_PATH", "http://localhost:8001/uploads/");
-define("SILMPLE_FILE_PATH", "http://localhost:8001/");
+// define("FILE_PATH", "http://localhost:8001/uploads/");
+// define("SILMPLE_FILE_PATH", "http://localhost:8001/");
