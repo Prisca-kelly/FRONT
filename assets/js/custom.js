@@ -10,13 +10,12 @@ function successSweetAlert(msg = "", timer = 2000) {
   });
 }
 
-function errorSweetAlert(msg = "", timer = 2000) {
+function errorSweetAlert(msg = "") {
   Swal.fire({
     icon: "error",
     title: "Erreur",
     text: msg,
     confirmButtonText: "Ok",
-    timer: timer,
   }).then((out) => {});
 }
 
@@ -27,5 +26,17 @@ function customSweetAlert(msg = "", timer = 2000, icon = "success") {
     text: msg,
     showConfirmButton: false,
     timer: timer,
+  });
+}
+
+function confirmSweetAlert(msg = "") {
+  return Swal.fire({
+    icon: "question",
+    title: "Confirmation",
+    text: msg,
+    showConfirmButton: true,
+    showDenyButton: true,
+    confirmButtonText: "Oui",
+    denyButtonText: "Non",
   });
 }

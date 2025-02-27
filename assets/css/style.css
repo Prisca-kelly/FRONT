@@ -11885,3 +11885,12 @@ a.as-color,
   color: #065465;
   font-weight: bold;
 }
+
+.theme-btn.danger {
+  color: red !important;
+}
+.theme-btn.danger:hover {
+  color: white !important;
+  background-color: red !important;
+  border-color: red !important;
+}
