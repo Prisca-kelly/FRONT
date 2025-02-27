@@ -1,6 +1,10 @@
 <?php
 require('model/config/database.php'); // Inclure la connexion
 require('model/config/util.php'); // Fichier qui gère les sessions
+init_session();
+if (is_connected()) {
+    $user =  $_SESSION["id"];
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
