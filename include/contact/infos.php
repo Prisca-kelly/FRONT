@@ -5,7 +5,7 @@
                 <div class="contact-info-content mb-30 rmb-55" data-aos="fade-up" data-aos-duration="1500"
                     data-aos-offset="50">
                     <div class="section-title mb-30">
-                        <h2>Parlons de notre guide de voyage expert</h2>
+                        <h2>Découvrez notre guide de voyage expert.</h2>
                     </div>
                     <p> Notre équipe d assistance dediée est toujours prete à vous aider pour toutes les
                         questions
@@ -34,7 +34,7 @@
                             <div class="content">
                                 <h5>Besoin d aide et de soutien</h5>
                                 <div class="text"><i class="far fa-envelope"></i> <a
-                                        href="mailto:support@gmail.com">support@gmail.com</a></div>
+                                        href="mailto:support@gmail.com">asfinancial.ga.@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -44,8 +44,7 @@
                             <div class="icon"><i class="fas fa-phone"></i></div>
                             <div class="content">
                                 <h5>Un besoin Urgent</h5>
-                                <div class="text"><i class="far fa-phone"></i> <a href="callto:+0001234588">+000
-                                        (123) 45 88</a></div>
+                                <div class="text"><i class="far fa-phone"></i> <a href="callto:+0001234588">+241 77579908 - 066705470</a></div>
                             </div>
                         </div>
                     </div>
@@ -54,9 +53,8 @@
                             data-aos-delay="50">
                             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="content">
-                                <h5>New York Branch</h5>
-                                <div class="text"><i class="fal fa-map-marker-alt"></i> 55 East 10th Street, New
-                                    York, NY 10003, United States</div>
+                                <h5>Libreville</h5>
+                                <div class="text"><i class="fal fa-map-marker-alt"></i> Carrefour Leon MBA</div>
                             </div>
                         </div>
                     </div>
@@ -65,9 +63,8 @@
                             data-aos-delay="100">
                             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="content">
-                                <h5>Adresse du bureau principal</h5>
-                                <div class="text"><i class="fal fa-map-marker-alt"></i> 55 East 10th Street, New
-                                    York, NY 10003, United States</div>
+                                <h5>Horaires</h5>
+                                <div class="text"><i class="fal fa-map-marker-alt"></i>Lundi - Samedi, 08h30 - 17h</div>
                             </div>
                         </div>
                     </div>

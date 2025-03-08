@@ -45,15 +45,13 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="about-us-content rmb-55" data-aos="fade-left" data-aos-duration="1500"
                             data-aos-offset="50">
                             <div class="section-title mb-25">
-                                <h2>Nous voyageons pour chercher d'autres états, d'autres vies, d'autres âmes.</h2>
+                                <h2>Voyagez, c'est vivre.</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                                consectetur
-                                adipisicing elit. Quaerat ipsam officiis atque, doloremque eos.</p>
+                            <p>Nous voyageons pour chercher d'autres états, d'autres vie, d'autres ames.</p>
                             <div class="divider counter-text-wrap mt-45 mb-55"><span>Nous avons <span><span
-                                            class="count-text plus" data-speed="3000" data-stop="25">0</span>
-                                        Years</span>
-                                    of experience</span></div>
+                                            class="count-text plus" data-speed="3000" data-stop="5">0</span>
+                                        ans</span>
+                                    d'expérience</span></div>
                             <div class="row">
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
@@ -115,13 +113,13 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/R.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
                                     <a href="tour-details.html">VISA</a>
                                 </h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                <p> C'est un document officiel qui vous permet de voyager et de séjourner légalement dans un pays étranger pour une durée déterminée. Essentiel pour les voyages touristiques, professionnels ou d'études, il varie selon les exigences de chaque destination.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -136,13 +134,13 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/OIP0.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">Hotels</a>
+                                    <a href="tour-details.html">Hôtels</a>
                                 </h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                <p> Ils vous offrent un confort et services adaptés à tous les voyageurs, que ce soit pour un séjour touristique, un voyage d'affaires ou une escapade détente. Du luxe aux options économiques, chaque établissement propose une expériene unique pour vous rendre votre séjour agréable et mémorables.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -157,13 +155,13 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/OIP1.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
                                     <a href="tour-details.html">Destination</a>
                                 </h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                <p>Découvrez une destination unique où paysages époustouflants, culture fascinante et expériences inoubliables vous attendent. Entre nature préservée, monuments emblématiques et traditions locales, chaque voyage est une invitation à l’émerveillement. 
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -178,13 +176,13 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                             data-aos-duration="1500" data-aos-offset="50">
                             <div class="image">
-                                <img src="assets/images/destinations/tour-list1.jpg" alt="Tour List">
+                                <img src="assets/images/destinations/R00.jpg" alt="Tour List">
                             </div>
                             <div class="content">
                                 <h5>
                                     <a href="tour-details.html">Tourisme</a>
                                 </h5>
-                                <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches and landscapes
+                                <p>Le tourisme est bien plus qu’un simple voyage, c’est une porte ouverte sur le monde et ses richesses. Il permet de découvrir de nouvelles cultures, d’explorer des paysages variés et de vivre des expériences uniques. Que ce soit pour un séjour détente sur des plages paradisiaques, une immersion dans l’histoire à travers des monuments emblématiques ou une aventure au cœur de la nature, chaque destination offre une opportunité d’apprentissage et d’émerveillement. 
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">

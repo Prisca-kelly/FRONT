@@ -49,7 +49,7 @@
                         <ul class="list-style-three">
                             <li><a href="destination-details.html">Facebook</a></li>
                             <li><a href="destination-details.html">Instagram</a></li>
-                            <li><a href="destination-details.html">Linkdin</a></li>
+                            <li><a href="destination-details.html">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,18 +62,18 @@
                         <ul class="list-style-one">
                             <li>
                                 <i class="fal fa-map-marked-alt"></i>
-                                578 Level, D-block 45 Street Melbourne, Australia
+                                Carrefour Leon MBA
                             </li>
                             <li>
                                 <i class="fal fa-envelope"></i>
-                                <a href="mailto:supportrevelo@gmail.com">supportrevelo@gmail.com</a>
+                                <a href="mailto:supportrevelo@gmail.com">asfinancial.ga.@gmail.com</a>
                             </li>
                             <li>
-                                <i class="fal fa-clock"></i> Mon - Fri, 08am - 05pm
+                                <i class="fal fa-clock"></i> Lundi - Samedi, 08h30 - 17h
                             </li>
                             <li>
                                 <i class="fal fa-phone-volume"></i>
-                                <a href="callto:+88012334588">+880 (123) 34588</a>
+                                <a href="callto:+88012334588">+241 77579908 - 066705470</a>
                             </li>
                         </ul>
                     </div>

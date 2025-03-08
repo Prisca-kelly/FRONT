@@ -103,13 +103,9 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                         <div class="about-us-content rmb-55" data-aos="fade-left" data-aos-duration="1500"
                             data-aos-offset="50">
                             <div class="section-title mb-25">
-                                <h2>Voyagez en toute confiance, les principales raisons de choisir notre agence</h2>
+                                <h2>Voyagez en toute confiance.</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dignissimos deleniti
-                                ipsum
-                                culpa a sed sequi? Id, quo nobis repellendus est recusandae neque earum cum ab minima
-                                hic
-                                nihil molestiae..</p>
+                            <p>Notre mission est de rendre le voyage accessible et enrichissant pour tous. Grâce à une équipe passionnée et des services personnalisés, nous accompagnons nos clients à chaque étape pour transformer leurs rêves d’évasion en réalité.</p>
                             <div class="row pt-25">
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
