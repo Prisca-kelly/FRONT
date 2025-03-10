@@ -9,7 +9,7 @@ if (!is_connected()) {
 $user =  $_SESSION["id"];
 $page = "historique";
 
-$sqlR = $bdd->query("SELECT r.id_reservation, r.id_destination, r.date_depart, r.date_retour, r.classe_souhaite, r.nombre_passager, r.remarques, r.date_creation, r.statut, d.nom, d.description, d.image FROM reservation r, destination d WHERE r.id_destination = d.id_destination AND r.id_utilisateur = $user");
+$sqlR = $bdd->query("SELECT r.id_reservation, r.id_destination, r.date_depart, r.date_retour, r.classe_souhaite, r.nombre_passager, r.remarques, r.date_creation, r.statut, d.nom, d.description, d.image FROM reservation r, destination d WHERE r.id_destination = d.id_destination AND r.id_utilisateur = $user ORDER BY r.id_reservation DESC");
 $reservations = $sqlR->fetchAll();
 $total = $sqlR->rowCount();
 ?>
@@ -52,7 +52,7 @@ $total = $sqlR->rowCount();
                                 data-aos-duration="1500" data-aos-offset="50">
                                 <div class="image">
                                     <?php
-                                    if ($reservation['statut'] == 'validé') echo '<span class="badge badge">En attente de payement</span>';
+                                    if ($reservation['statut'] == 'validé') echo '<span class="badge badge">Validé</span>';
                                     else if ($reservation['statut'] == "Rejetée") echo '<span class="badge bgc-pink">Rejetée</span>';
                                     else if ($reservation['statut'] == "Annulée") echo '<span class="badge bgc-pink">Annulée</span>';
                                     else if ($reservation['statut'] == "Payée") echo '<span class="badge bgc-primary">Payée</span>';
@@ -87,10 +87,10 @@ $total = $sqlR->rowCount();
                                         <div>
                                             <?php
                                             if ($reservation['statut'] == 'validé') { ?>
-                                                <a href="#" class="theme-btn style-two style-three">
+                                                <!-- <a href="#" class="theme-btn style-two style-three">
                                                     <span data-hover="Payer">Payer</span> &nbsp;
                                                     <i class="far fa-check"></i>
-                                                </a>
+                                                </a> -->
                                             <?php }
                                             ?>
                                             <?php

@@ -4,6 +4,14 @@ require('model/config/util.php'); // Fichier qui gère les sessions
 init_session();
 if (is_connected()) {
     $user =  $_SESSION["id"];
+
+    $sqlClient = $bdd->prepare("SELECT * FROM utilisateur WHERE id_utilisateur = ?");
+    $sqlClient->execute(array($user));
+    if ($sqlClient->rowCount() == 1) {
+        $client = $sqlClient->fetch();
+    } else {
+        header('Location: deconnexion.php');
+    }
 } else {
     header('Location: login.php');
 }
@@ -41,28 +49,87 @@ $page = "profile";
                         <?php include 'include/common/cleint-menu.php'; ?>
                     </div>
                     <div class="col-lg-9">
-                        <div class="destination-item style-three bgc-lighter" data-aos="fade-up"
-                            data-aos-duration="1500" data-aos-offset="50">
-                            <div class="image">
-                                <img src="assets/images/destinations/destination-five1.jpg" alt="Tour List">
+                        <div class="destination-item style-three bgc-lighter d-block rounded-2 p-3">
+                            <div class="row">
+                                <div class="col-12 text-center mb-3">
+                                    <h3>Informations personnelles</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nom">Nom complet<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" value="<?= $client['nom'] ?>" name="nom"
+                                            id="nom" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="telephone">Téléphone<span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control" value="<?= $client['telephone'] ?>"
+                                            name="telephone" id="telephone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="adresse">Adresse<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" value="<?= $client['adresse'] ?>"
+                                            name="adresse" id="adresse" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email<span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" value="<?= $client['email'] ?>"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button id="update" class="theme-btn style-two btn-blue">
+                                        <span data-hover="Enregistrer">Enregistrer</span>&nbsp;
+                                        <i class="fal fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="content">
-                                <h5><a href="tour-details.html">Bay Cruise by Boat in Bali, Indonesia</a></h5>
-                                <!-- <p>Bali, Indonesia, is tropical paradise renowned breathtaking beaches, vibrant culture,
-                                    and lush landscapes</p> -->
-                                <ul class="blog-meta">
-                                    <li><i class="far fa-clock"></i> 3 days 2 nights</li>
-                                    <li><i class="far fa-user"></i> 5-8 guest</li>
-                                </ul>
-                                <div class="destination-footer">
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
-                                        <span data-hover="Payer">Payer</span> &nbsp;
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="tour-details.html" class="theme-btn danger style-two style-three">
-                                        <span data-hover="Annuler">Annuler</span> &nbsp;
-                                        <i class="fal fa-times"></i>
-                                    </a>
+                        </div>
+                        <br><br>
+
+                        <div class="destination-item style-three bgc-lighter d-block rounded-2 p-3">
+                            <div class="row">
+                                <div class="col-12 text-center mb-3">
+                                    <h3>Mot de passe</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="actualPassword">Mot de passe actuel<span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="actualPassword" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="newPassword">Nouveau mot de passe<span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="newPassword" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirmez le mot de passe<span
+                                                class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="confirmPassword" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center as-color">
+                                        <input type="checkbox" id="state" value="0" onchange="showPassword()">
+                                        <label for="state">&nbsp; Afficher les mot de passe</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button id="updatePassword" class="theme-btn style-two btn-blue">
+                                        <span data-hover="Enregistrer">Mettre à jour</span>&nbsp;
+                                        <i class="fal fa-arrow-right"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -81,27 +148,65 @@ $page = "profile";
 
 
     <!-- Jquery -->
-    <script src=" assets/js/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Appear Js -->
-    <script src="assets/js/appear.min.js"></script>
-    <!-- Slick -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Nice Select -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- Image Loader -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- Jquery UI -->
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <!-- Isotope -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!--  AOS Animation -->
-    <script src="assets/js/aos.js"></script>
-    <!-- Custom script -->
-    <script src="assets/js/script.js"></script>
+    <?php include 'include/common/script.php'; ?>
+    <script>
+        $('#update').click(function() {
+            let data = {
+                update: 'update',
+                nom: $('#nom').val(),
+                telephone: $('#telephone').val(),
+                adresse: $('#adresse').val()
+            };
+            $.ajax({
+                type: 'POST',
+                url: 'model/app/utilisateur.php',
+                data: data,
+                dataType: "json",
+                success: function(res) {
+                    if (res.code === 200) {
+                        successSweetAlert(res.message);
+                    } else if (res.code === 400 || res.code === 500) {
+                        errorSweetAlert(res.message);
+                    }
+                }
+            });
+        });
+
+        $('#updatePassword').click(function() {
+            let data = {
+                updatePassword: 'updatePassword',
+                actualPassword: $('#actualPassword').val(),
+                newPassword: $('#newPassword').val(),
+                confirmPassword: $('#confirmPassword').val()
+            };
+            $.ajax({
+                type: 'POST',
+                url: 'model/app/utilisateur.php',
+                data: data,
+                dataType: "json",
+                success: function(res) {
+                    if (res.code === 200) {
+                        successSweetAlert(res.message);
+                    } else if (res.code === 400 || res.code === 500) {
+                        errorSweetAlert(res.message);
+                    }
+                }
+            });
+        });
+
+        function showPassword() {
+            let checkbok = document.getElementById("state");
+            if (checkbok.checked) {
+                $("#actualPassword").attr("type", 'text');
+                $("#newPassword").attr("type", 'text');
+                $("#confirmPassword").attr("type", 'text');
+            } else {
+                $("#actualPassword").attr("type", 'password');
+                $("#newPassword").attr("type", 'password');
+                $("#confirmPassword").attr("type", 'password');
+            }
+        }
+    </script>
 
 </body>
 

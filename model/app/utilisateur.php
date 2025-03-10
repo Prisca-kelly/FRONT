@@ -1,7 +1,7 @@
 <?php
 require('../config/database.php'); // Inclure la connexion
 require('../config/util.php'); // Fichier 
-
+init_session();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['inscire'])) {
     $nom = htmlspecialchars($_POST['nom']);
     $email = htmlspecialchars($_POST['email']);
@@ -61,5 +61,61 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         }
     } else {
         echo  json_encode(["code" => 400, "message" => "Remplissez tous les champs !"]);
+    }
+}
+
+if (is_connected()) {
+    $id_utilisateur = $_SESSION["id"];
+
+    if (isset($_POST['update']) && $_POST['update'] == 'update') {
+        if (!empty($_POST['nom']) && !empty($_POST['telephone']) && !empty($_POST['adresse'])) {
+            $nom = htmlspecialchars($_POST['nom']);
+            $telephone = htmlspecialchars($_POST['telephone']);
+            $adresse = htmlspecialchars($_POST['adresse']);
+
+            $stmt = $bdd->prepare("UPDATE utilisateur SET nom = ?, telephone = ?, adresse = ? WHERE id_utilisateur = ?");
+            $stmt->execute(array(
+                $nom,
+                $telephone,
+                $adresse,
+                $id_utilisateur
+            ));
+            if ($stmt) {
+                echo  json_encode(["code" => 200, "message" => "Mise à jour réussie !"]);
+            } else {
+                echo  json_encode(["code" => 400, "message" => "Une erreur est survenue lors de la mise à jour !"]);
+            }
+        } else {
+            echo  json_encode(["code" => 400, "message" => "Remplissez tous les champs !"]);
+        }
+    }
+
+    if (isset($_POST['updatePassword']) && $_POST['updatePassword'] === "updatePassword") {
+        if (!empty($_POST['actualPassword']) && !empty($_POST['newPassword']) && !empty($_POST['confirmPassword'])) {
+            $actualPassword = $_POST['actualPassword'];
+            $newPassword = $_POST['newPassword'];
+            $confirmPassword = $_POST['confirmPassword'];
+            if ($newPassword === $confirmPassword) {
+                $password = sha1($newPassword);
+                $sql = $bdd->prepare("SELECT * FROM utilisateur WHERE id_utilisateur = ?");
+                $sql->execute(array($id_utilisateur));
+                $user = $sql->fetch();
+                if ($user["mot_de_passe"] == sha1($actualPassword)) {
+                    $update = $bdd->prepare("UPDATE utilisateur SET mot_de_passe = ? WHERE id_utilisateur = ?");
+                    $update->execute(array($password, $id_utilisateur));
+                    if ($update) {
+                        echo json_encode(["code" => 200, "message" => "Mot de passe modifié avec succès !"]);
+                    } else {
+                        echo json_encode(["code" => 400, "message" => "Une erreur s'est produite !"]);
+                    }
+                } else {
+                    echo json_encode(["code" => 400, "message" => "Votre mot de passe actuel est incorrect !"]);
+                }
+            } else {
+                echo  json_encode(["code" => 400, "message" => "Le nouveau et le mot de passe de confirmation doivent être identiques"]);
+            }
+        } else {
+            echo  json_encode(["code" => 400, "message" => "Remplissez tous les champs !"]);
+        }
     }
 }
