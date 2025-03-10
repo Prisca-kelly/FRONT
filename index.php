@@ -1,6 +1,15 @@
 <?php
 require('model/config/database.php'); // Inclure la connexion
 require('model/config/util.php'); // Fichier qui gère les sessions
+
+function countData($table): int
+{
+    global $bdd;
+
+    $sql = $bdd->query("SELECT COUNT(*) as total FROM $table");
+    $sql->execute();
+    return $sql->fetch()['total'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -55,13 +64,15 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                             <div class="row">
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        <span class="count-text k-plus" data-speed="3000" data-stop="3">0</span>
+                                        <span class="count-text" data-speed="3000"
+                                            data-stop="<?= countData('destination') ?>">0</span>
                                         <span class="counter-title">Destinations Populaires</span>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        <span class="count-text m-plus" data-speed="3000" data-stop="9">0</span>
+                                        <span class="count-text m-plus" data-speed="3000"
+                                            data-stop="<?= countData('hotel') ?>">0</span>
                                         <span class="counter-title">Satisfaction des Clients</span>
                                     </div>
                                 </div>
@@ -119,7 +130,10 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                                 <h5>
                                     <a href="tour-details.html">VISA</a>
                                 </h5>
-                                <p> C'est un document officiel qui vous permet de voyager et de séjourner légalement dans un pays étranger pour une durée déterminée. Essentiel pour les voyages touristiques, professionnels ou d'études, il varie selon les exigences de chaque destination.
+                                <p> C'est un document officiel qui vous permet de voyager et de séjourner légalement
+                                    dans un pays étranger pour une durée déterminée. Essentiel pour les voyages
+                                    touristiques, professionnels ou d'études, il varie selon les exigences de chaque
+                                    destination.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -140,7 +154,10 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                                 <h5>
                                     <a href="tour-details.html">Hôtels</a>
                                 </h5>
-                                <p> Ils vous offrent un confort et services adaptés à tous les voyageurs, que ce soit pour un séjour touristique, un voyage d'affaires ou une escapade détente. Du luxe aux options économiques, chaque établissement propose une expériene unique pour vous rendre votre séjour agréable et mémorables.
+                                <p> Ils vous offrent un confort et services adaptés à tous les voyageurs, que ce soit
+                                    pour un séjour touristique, un voyage d'affaires ou une escapade détente. Du luxe
+                                    aux options économiques, chaque établissement propose une expériene unique pour vous
+                                    rendre votre séjour agréable et mémorables.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -161,7 +178,10 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                                 <h5>
                                     <a href="tour-details.html">Destination</a>
                                 </h5>
-                                <p>Découvrez une destination unique où paysages époustouflants, culture fascinante et expériences inoubliables vous attendent. Entre nature préservée, monuments emblématiques et traditions locales, chaque voyage est une invitation à l’émerveillement. 
+                                <p>Découvrez une destination unique où paysages époustouflants, culture fascinante et
+                                    expériences inoubliables vous attendent. Entre nature préservée, monuments
+                                    emblématiques et traditions locales, chaque voyage est une invitation à
+                                    l’émerveillement.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">
@@ -182,7 +202,12 @@ require('model/config/util.php'); // Fichier qui gère les sessions
                                 <h5>
                                     <a href="tour-details.html">Tourisme</a>
                                 </h5>
-                                <p>Le tourisme est bien plus qu’un simple voyage, c’est une porte ouverte sur le monde et ses richesses. Il permet de découvrir de nouvelles cultures, d’explorer des paysages variés et de vivre des expériences uniques. Que ce soit pour un séjour détente sur des plages paradisiaques, une immersion dans l’histoire à travers des monuments emblématiques ou une aventure au cœur de la nature, chaque destination offre une opportunité d’apprentissage et d’émerveillement. 
+                                <p>Le tourisme est bien plus qu’un simple voyage, c’est une porte ouverte sur le monde
+                                    et ses richesses. Il permet de découvrir de nouvelles cultures, d’explorer des
+                                    paysages variés et de vivre des expériences uniques. Que ce soit pour un séjour
+                                    détente sur des plages paradisiaques, une immersion dans l’histoire à travers des
+                                    monuments emblématiques ou une aventure au cœur de la nature, chaque destination
+                                    offre une opportunité d’apprentissage et d’émerveillement.
                                 </p>
                                 <div class="destination-footer">
                                     <a href="tour-details.html" class="theme-btn style-two style-three">

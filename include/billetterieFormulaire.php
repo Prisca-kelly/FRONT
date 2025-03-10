@@ -37,7 +37,7 @@ if (is_connected()) {
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="comment-form bgc-lighter z-1 rel mb-30 rmb-55">
-                    <form id="contactForm" class="contactForm" name="contactForm" method="post" data-aos="fade-left"
+                    <form id="contactForm" class="contactForm" name="contactForm" data-aos="fade-left"
                         data-aos-duration="1500" data-aos-offset="50">
                         <div class="section-title">
                             <h2>Reservation</h2>
@@ -60,8 +60,7 @@ if (is_connected()) {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="id_destination">Destination *</label>
-                                    <select id="class" name="id_destination" id="id_destination" required
-                                        aria-required="true">
+                                    <select name="id_destination" id="id_destination" required aria-required="true">
                                         <option value="0" disabled selected>Choisissez une destination</option>
                                         <?php
                                         $sql = $bdd->query("SELECT * FROM destination WHERE statut = 'Activé' ORDER BY id_destination DESC");
@@ -78,8 +77,7 @@ if (is_connected()) {
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="classe_souhaite">Classe souhaitée *</label>
-                                    <select id="class" name="classe_souhaite" id="classe_souhaite" required
-                                        aria-required="true">
+                                    <select name="classe_souhaite" id="classe_souhaite" required aria-required="true">
                                         <option value="" disabled selected>Choisissez une classe</option>
                                         <option value="Classe économique">Classe économique</option>
                                         <option value="Classe affaires">Classe affaires</option>
@@ -103,11 +101,11 @@ if (is_connected()) {
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group mb-0">
-                                    <button type="submit" name="enregistrer" class="theme-btn style-two">
+                                    <button type="button" name="enregistrer" id="enregistrer"
+                                        class="theme-btn style-two">
                                         <span data-hover="Enregistrer">Enregistrer</span> &nbsp;
                                         <i class="fal fa-arrow-right"></i>
                                     </button>
-                                    <!-- <div id="msgSubmit" class="hidden"></div> -->
                                 </div>
                             </div>
                         </div>
