@@ -13,16 +13,6 @@
                 </a>
             </li>
             <li>
-                <a href="./client-notification.php" class="<?= $page == 'notifications' ? 'active' : ''; ?>">
-                    <i class="fas fa-bell me-2"></i> Notifications
-                </a>
-            </li>
-            <!-- <li>
-                                        <a href="#" class="<?= $page == 'securite' ? 'active' : ''; ?>">
-                                            <i class="fas fa-shield-alt me-2"></i> Sécurité
-                                        </a>
-                                    </li> -->
-            <li>
                 <a href="./deconnexion.php">
                     <i class="fas fa-power-off me-2"></i> Déconnexion
                 </a>
@@ -35,13 +25,13 @@
     <div class="content text-white">
         <span class="h6">Envie d'explorer le monde</span>
         <h3>Visitez nos destinations</h3>
-        <a href="tour-list.html" class="theme-btn style-two bgc-secondary">
+        <a href="destination.php" class="theme-btn style-two bgc-secondary">
             <span data-hover="Visiter maintenant">Visiter maintenant&nbsp;</span>
             <i class="fal fa-arrow-right"></i>
         </a>
     </div>
     <div class="image">
-        <img src="assets/images/widgets/cta-widget.png" alt="CTA">
+        <img src="assets/images/destinations/OIP1.jpg" alt="CTA">
     </div>
     <div class="cta-shape"><img src="assets/images/widgets/cta-shape2.png" alt="Shape"></div>
 </div>

@@ -11,7 +11,7 @@ $user =  $_SESSION["id"];
 if (isset($_POST["annuler"])) {
     if (isset($_POST['id_reservation'])) {
         $id_reservation = $_POST['id_reservation'];
-        $stmt = $bdd->prepare("UPDATE reservation SET statut = 'Annulée' WHERE id_reservation = :id_reservation");
+        $stmt = $bdd->prepare("UPDATE reservation SET statut = 'annulée' WHERE id_reservation = :id_reservation");
         $stmt->execute([':id_reservation' => $id_reservation]);
         if ($stmt) {
             echo  json_encode(["code" => 200, "message" => "Réservation annulée !"]);
@@ -53,6 +53,33 @@ if (isset($_POST["enregistrer"])) {
     } else {
         echo  json_encode(["code" => 400, "message" => "Remplissez tous les champs !"]);
     }
-} else {
-    echo  json_encode(["code" => 400, "message" => "Oups ! Quelque chose s'est mal passé !"]);
+}
+
+
+if (isset($_POST["payer"])) {
+    if (isset($_POST['id_reservation']) && isset($_POST['telephone']) && isset($_POST['modePaiement'])) {
+        $id_reservation = $_POST['id_reservation'];
+        $telephone = $_POST['telephone'];
+        $modePaiement = $_POST['modePaiement'];
+        $sqMode = $bdd->prepare("SELECT * FROM modepaiement WHERE nom_modepaiement = ?");
+        $sqMode->execute(array($modePaiement));
+        if ($sqMode->rowCount() == 1) {
+            $id_mode = $sqMode->fetch()['id_modepaiement'];
+            $sql = $bdd->prepare("INSERT INTO paiement (id_reservation, id_mode_paiement, telephone) VALUES (?,?,?)");
+            $sql->execute(array($id_reservation, $id_mode, $telephone));
+            if ($sql) {
+                $sql1 = $bdd->query("UPDATE reservation SET statut = 'payée' WHERE id_reservation = $id_reservation");
+                $sql1->execute();
+                if ($sql1) {
+                    echo  json_encode(["code" => 200, "message" => "Paiement effectué avec succès"]);
+                }
+            } else {
+                echo  json_encode(["code" => 500, "message" => "Erreur du serveur !"]);
+            }
+        } else {
+            echo  json_encode(["code" => 400, "message" => "Ce mode de paiement n'existe pas !"]);
+        }
+    } else {
+        echo  json_encode(["code" => 400, "message" => "Oups ! Quelque chose s'est mal passé !"]);
+    }
 }

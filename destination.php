@@ -46,19 +46,19 @@ $total = $sql->rowCount();
                         echo "<h5 class='text-center'>Aucun article n'est disponible pour le moment</h5>";
                     }
                     foreach ($destinations as $destination) { ?>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="destination-item style-two" data-aos="flip-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <img src="<?= FILE_PATH . $destination['image'] ?>" alt="Destination">
-                            </div>
-                            <div class="content">
-                                <h6><a href="destination-details.html"><?= $destination['nom'] ?></a></h6>
-                                <span class="time"><?= $destination['description'] ?></span>
-                                <a href="billetterie.php" class="more"><i class="fas fa-chevron-right"></i></a>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="destination-item style-two" data-aos="flip-up" data-aos-duration="1500"
+                                data-aos-offset="50">
+                                <div class="image">
+                                    <img src="<?= FILE_PATH . $destination['image'] ?>" alt="Destination">
+                                </div>
+                                <div class="content">
+                                    <h6><a href="destination-details.html"><?= $destination['nom'] ?></a></h6>
+                                    <span class="time"><?= $destination['description'] ?></span>
+                                    <a href="billetterie.php" class="more"><i class="fas fa-chevron-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <?php }
                     ?>
 

@@ -128,15 +128,12 @@ function countData($table): int
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">VISA</a>
+                                    <a href="services.php#visa">VISA</a>
                                 </h5>
-                                <p> C'est un document officiel qui vous permet de voyager et de séjourner légalement
-                                    dans un pays étranger pour une durée déterminée. Essentiel pour les voyages
-                                    touristiques, professionnels ou d'études, il varie selon les exigences de chaque
-                                    destination.
+                                <p> C'est un document officiel qui vous permet de ...
                                 </p>
                                 <div class="destination-footer">
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                    <a href="services.php#visa" class="theme-btn style-two style-three">
                                         <span data-hover="Voir plus">Voir plus</span>
                                         &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
@@ -152,15 +149,12 @@ function countData($table): int
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">Hôtels</a>
+                                    <a href="services.php#hotel">Hôtels</a>
                                 </h5>
-                                <p> Ils vous offrent un confort et services adaptés à tous les voyageurs, que ce soit
-                                    pour un séjour touristique, un voyage d'affaires ou une escapade détente. Du luxe
-                                    aux options économiques, chaque établissement propose une expériene unique pour vous
-                                    rendre votre séjour agréable et mémorables.
+                                <p> Ils vous offrent un confort et services adaptés à tous ...
                                 </p>
                                 <div class="destination-footer">
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                    <a href="services.php#hotel" class="theme-btn style-two style-three">
                                         <span data-hover="Voir plus">Voir plus</span>
                                         &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
@@ -176,15 +170,12 @@ function countData($table): int
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">Destination</a>
+                                    <a href="services.php#destination">Destination</a>
                                 </h5>
-                                <p>Découvrez une destination unique où paysages époustouflants, culture fascinante et
-                                    expériences inoubliables vous attendent. Entre nature préservée, monuments
-                                    emblématiques et traditions locales, chaque voyage est une invitation à
-                                    l’émerveillement.
+                                <p>Découvrez une destination unique où paysages époustouflants...
                                 </p>
                                 <div class="destination-footer">
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                    <a href="services.php#destination" class="theme-btn style-two style-three">
                                         <span data-hover="Voir plus">Voir plus</span>
                                         &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
@@ -200,17 +191,12 @@ function countData($table): int
                             </div>
                             <div class="content">
                                 <h5>
-                                    <a href="tour-details.html">Tourisme</a>
+                                    <a href="services.php#tourisme">Tourisme</a>
                                 </h5>
-                                <p>Le tourisme est bien plus qu’un simple voyage, c’est une porte ouverte sur le monde
-                                    et ses richesses. Il permet de découvrir de nouvelles cultures, d’explorer des
-                                    paysages variés et de vivre des expériences uniques. Que ce soit pour un séjour
-                                    détente sur des plages paradisiaques, une immersion dans l’histoire à travers des
-                                    monuments emblématiques ou une aventure au cœur de la nature, chaque destination
-                                    offre une opportunité d’apprentissage et d’émerveillement.
+                                <p>Le tourisme est bien plus qu’un simple voyage ...
                                 </p>
                                 <div class="destination-footer">
-                                    <a href="tour-details.html" class="theme-btn style-two style-three">
+                                    <a href="services.php#tourisme" class="theme-btn style-two style-three">
                                         <span data-hover="Voir plus">Voir plus</span>
                                         &nbsp;<i class="fal fa-arrow-right"></i>
                                     </a>
