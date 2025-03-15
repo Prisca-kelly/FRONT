@@ -79,7 +79,7 @@ $page = "securite";
                             <div class="content text-white">
                                 <span class="h6">Envie d'explorer le monde</span>
                                 <h3>Visitez nos destinations</h3>
-                                <a href="tour-list.html" class="theme-btn style-two bgc-secondary">
+                                <a href="destination.php" class="theme-btn style-two bgc-secondary">
                                     <span data-hover="Visiter maintenant">Visiter maintenant&nbsp;</span>
                                     <i class="fal fa-arrow-right"></i>
                                 </a>

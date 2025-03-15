@@ -61,56 +61,34 @@ $total = $sql->rowCount();
                             echo "<h5 class='text-center'>Aucun article n'est disponible pour le moment</h5>";
                         }
                         foreach ($blogs as $blog) { ?>
-                        <div class="blog-item style-three" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <img src="<?= FILE_PATH . $blog['image'] ?>" alt="Blog List">
-                            </div>
-                            <div class="content">
-                                <h5>
-                                    <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>">
-                                        <?php echo $blog['titre']; ?>
-                                    </a>
-                                </h5>
-                                <p>
-                                    <?php echo $blog['contenu']; ?>
-                                </p>
-                                <ul class="blog-meta text-end">
-                                    <li>
-                                        <i class="far fa-calendar-alt"></i> <a href="#">
-                                            <?php echo $blog['date_publication']; ?>
+                            <div class="blog-item style-three" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-offset="50">
+                                <div class="image">
+                                    <img src="<?= FILE_PATH . $blog['image'] ?>" alt="Blog List">
+                                </div>
+                                <div class="content">
+                                    <h5>
+                                        <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>">
+                                            <?php echo $blog['titre']; ?>
                                         </a>
-                                    </li>
-                                </ul>
+                                    </h5>
+                                    <ul class="blog-meta text-end">
+                                        <li>
+                                            <i class="far fa-calendar-alt"></i> <a href="#">
+                                                <?php echo $blog['date_publication']; ?>
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                                <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>"
-                                    class="theme-btn style-two style-three">
-                                    <span data-hover="Voir plus">Voir plus &nbsp;</span>
-                                    <i class="fal fa-arrow-right"></i>
-                                </a>
+                                    <a href="blog-details.php?article=<?php echo $blog['id_article']; ?>"
+                                        class="theme-btn style-two style-three">
+                                        <span data-hover="Voir plus">Voir plus &nbsp;</span>
+                                        <i class="fal fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
                         <?php }
                         ?>
-
-                        <!-- <ul class="pagination pt-15 flex-wrap" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <li class="page-item disabled">
-                                <span class="page-link"><i class="far fa-chevron-left"></i></span>
-                            </li>
-                            <li class="page-item active">
-                                <span class="page-link">
-                                    1
-                                    <span class="sr-only">(current)</span>
-                                </span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">...</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="far fa-chevron-right"></i></a>
-                            </li>
-                        </ul> -->
                     </div>
                     <div class="col-lg-4 col-md-8 col-sm-10 rmt-75">
                         <div class="blog-sidebar">
@@ -122,13 +100,13 @@ $total = $sql->rowCount();
                                 <div class="content text-white">
                                     <span class="h6">Envie d'explorer le monde</span>
                                     <h3>Visitez nos destinations</h3>
-                                    <a href="tour-list.html" class="theme-btn style-two bgc-secondary">
+                                    <a href="destination.php" class="theme-btn style-two bgc-secondary">
                                         <span data-hover="Visiter maintenant">Visiter maintenant&nbsp;</span>
                                         <i class="fal fa-arrow-right"></i>
                                     </a>
                                 </div>
                                 <div class="image">
-                                    <img src="assets/images/widgets/cta-widget.png" alt="CTA">
+                                    <img src="assets/images/destinations/OIP1.jpg" alt="CTA">
                                 </div>
                                 <div class="cta-shape"><img src="assets/images/widgets/cta-shape.png" alt="Shape"></div>
                             </div>
