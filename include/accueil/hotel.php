@@ -18,7 +18,7 @@ $total = $sql->rowCount();
         <div class="row justify-content-center">
             <?php
             if ($total == 0) {
-                echo "<h5 class='text-center'>Aucun article n'est disponible pour le moment</h5>";
+                echo "<h5 class='text-center'>Aucun hôtel n'est disponible pour le moment</h5>";
             }
             foreach ($hotels as $hotel) { ?>
                 <div class="col-xxl-3 col-xl-4 col-md-6">

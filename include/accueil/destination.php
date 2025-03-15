@@ -19,7 +19,7 @@ $totalDest = $sqlDesti->rowCount();
                 <div class="row justify-content-center">
                     <?php
                     if ($totalDest == 0) {
-                        echo "<h5 class='text-center'>Aucun article n'est disponible pour le moment</h5>";
+                        echo "<h5 class='text-center'>Aucune destination n'est disponible pour le moment</h5>";
                     }
                     foreach ($destinations as $destination) { ?>
                         <div class="col-xl-3 col-md-6">

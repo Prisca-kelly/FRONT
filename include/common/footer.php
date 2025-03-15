@@ -18,11 +18,11 @@
                             <h5>Liens</h5>
                         </div>
                         <ul class="list-style-three">
-                            <li><a href="destination-details.html">Destinations</a></li>
-                            <li><a href="destination-details.html">A propos</a></li>
-                            <li><a href="destination-details.html">Service</a></li>
-                            <li><a href="destination-details.html">Contact</a></li>
-                            <li><a href="destination-details.html">Blog</a></li>
+                            <li><a href="destination.php">Destinations</a></li>
+                            <li><a href="about.php">A propos</a></li>
+                            <li><a href="services.php">Service</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="blog.php">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,10 +33,10 @@
                             <h5>Services</h5>
                         </div>
                         <ul class="list-style-three">
-                            <li><a href="about.html">Billetterie</a></li>
-                            <li><a href="blog.html">Procédures de Visa</a></li>
-                            <li><a href="contact.html">Destinations Touristiques</a></li>
-                            <li><a href="blog.html">Réservations d'Hôtels</a></li>
+                            <li><a href="billetterie.php">Billetterie</a></li>
+                            <li><a href="services.php#visa">Procédures de Visa</a></li>
+                            <li><a href="services.php#tourisme">Destinations Touristiques</a></li>
+                            <li><a href="services.php#hotel">Réservations d'Hôtels</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,9 +47,8 @@
                             <h5>Suivez nous</h5>
                         </div>
                         <ul class="list-style-three">
-                            <li><a href="destination-details.html">Facebook</a></li>
-                            <li><a href="destination-details.html">Instagram</a></li>
-                            <li><a href="destination-details.html">LinkedIn</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100083297501052">Facebook</a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/as-financial-gabon/">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +56,7 @@
                     data-aos-duration="1500" data-aos-offset="50">
                     <div class="footer-widget footer-contact">
                         <div class="footer-title">
-                            <h5>Get In Touch</h5>
+                            <h5>Gardons le contact</h5>
                         </div>
                         <ul class="list-style-one">
                             <li>
@@ -66,14 +65,18 @@
                             </li>
                             <li>
                                 <i class="fal fa-envelope"></i>
-                                <a href="mailto:supportrevelo@gmail.com">asfinancial.ga.@gmail.com</a>
+                                <a href="mailto:asfinancial.ga.@gmail.com">asfinancial.ga.@gmail.com</a>
                             </li>
                             <li>
                                 <i class="fal fa-clock"></i> Lundi - Samedi, 08h30 - 17h
                             </li>
                             <li>
                                 <i class="fal fa-phone-volume"></i>
-                                <a href="callto:+88012334588">+241 77579908 - 066705470</a>
+                                <a href="callto:+24177579908">+241 77579908</a>
+                            </li>
+                            <li>
+                                <i class="fal fa-phone-volume"></i>
+                                <a href="callto:+24166705470">+241 066705470</a>
                             </li>
                         </ul>
                     </div>

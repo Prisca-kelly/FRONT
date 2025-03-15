@@ -22,7 +22,7 @@ require('model/config/util.php'); // Fichier qui gère les sessions
 
         <!-- Bannière Start -->
         <div class="row d-flex justify-content-center align-items-center vh-100"
-            style="background-image: url(assets/images/banner/pho1.jpeg); background-size: cover; background-position: center;">
+            style="background-image: url(assets/images/backgrounds/guides.png); background-size: cover; background-position: center;">
             <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 col-10 bg-light-opacity">
                 <div class="row">
                     <div class="col-lg-12">

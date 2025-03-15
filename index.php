@@ -71,13 +71,13 @@ function countData($table): int
                                 </div>
                                 <div class="col-6">
                                     <div class="counter-item counter-text-wrap">
-                                        <span class="count-text m-plus" data-speed="3000"
+                                        <span class="count-text" data-speed="3000"
                                             data-stop="<?= countData('hotel') ?>">0</span>
-                                        <span class="counter-title">Satisfaction des Clients</span>
+                                        <span class="counter-title">Hôtels</span>
                                     </div>
                                 </div>
                             </div>
-                            <a href="destination1.html" class="theme-btn mt-10 style-two">
+                            <a href="destination.php" class="theme-btn mt-10 style-two">
                                 <span data-hover="Explore Destinations">Decouvrir nos destinations.</span>
                                 <i class="fal fa-arrow-right"></i>
                             </a>

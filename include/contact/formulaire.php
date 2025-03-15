@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-md-7">
                 <div class="comment-form bgc-lighter z-1 rel mb-30 rmb-55">
-                    <form id="contactForm" class="contactForm" name="contactForm" action="assets/php/form-process.php"
+                    <form id="contactForm" class="contactForm" name="contactForm"
                         method="post" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
                         <div class="section-title">
                             <h2>Contactez-nous</h2>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group mb-0">
-                                    <button disabled type="submit" class="theme-btn style-two">
+                                    <button disabled type="button" class="theme-btn style-two">
                                         <span data-hover="Envoyer">Envoyez</span>&nbsp;
                                         <i class="fal fa-arrow-right"></i>
                                     </button>

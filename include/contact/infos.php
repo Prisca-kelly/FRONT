@@ -34,7 +34,7 @@
                             <div class="content">
                                 <h5>Besoin d aide et de soutien</h5>
                                 <div class="text"><i class="far fa-envelope"></i> <a
-                                        href="mailto:support@gmail.com">asfinancial.ga.@gmail.com</a></div>
+                                        href="mailto:asfinancial.ga.@gmail.com">asfinancial.ga.@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,12 @@
                             <div class="icon"><i class="fas fa-phone"></i></div>
                             <div class="content">
                                 <h5>Un besoin Urgent</h5>
-                                <div class="text"><i class="far fa-phone"></i> <a href="callto:+0001234588">+241 77579908 - 066705470</a></div>
+                                <div class="text"><i class="far fa-phone"></i>
+                                    <span>
+                                        <a href="callto:+24177579908">+241 77579908 </a> &nbsp;
+                                        <a href="callto:+24166705470">+241 066705470</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>

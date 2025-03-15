@@ -41,7 +41,6 @@
                                 <li><a href="services.php">Services</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                                 <li><a href="blog.php">Blog</a></li>
-                                <!-- <li><a href="client-space.html">Espace client</a></li> -->
                             </ul>
                         </div>
 

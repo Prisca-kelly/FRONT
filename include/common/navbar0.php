@@ -6,7 +6,7 @@
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logos/as-logo-2.png" alt="Logo" title="Logo">
                             <!-- <img src="assets/images/logo.png" alt="Logo" title="Logo"> -->
                         </a>
@@ -18,7 +18,7 @@
                     <nav class="main-menu navbar-expand-lg">
                         <div class="navbar-header">
                             <div class="mobile-logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/images/logos/as-logo-2.png" alt="Logo" title="Logo">
                                 </a>
                             </div>
